@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hạnh vivu | Du Lịch Trung Quốc Thật Chill & Tươi Sáng - Tour Tuyến No Shop</title>
-  <meta name="description" content="Khám phá Trung Hoa theo phong cách thật chill cùng Hạnh vivu: Cửu Trại Câu, Thượng Hải Ô Trấn, Lệ Giang, Bắc Kinh, Nam Ninh. 100% No Shop, chụp ảnh sống ảo triệu view, khách sạn 4-5 sao.">
+  <title>Hạnh vivu | Du Lịch Trung Quốc Thật Chill - Tour Tuyến No Shop (Hồng Đậm & Đen)</title>
+  <meta name="description" content="Khám phá Trung Hoa theo phong cách vừa chill vừa rực rỡ cùng Hạnh vivu: Cửu Trại Câu, Thượng Hải Ô Trấn, Lệ Giang, Bắc Kinh, Nam Ninh. 100% No Shop, khách sạn 4-5 sao.">
   
   <!-- Open Graph / Facebook Share -->
   <meta property="og:type" content="website">
@@ -26,198 +26,212 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              pink: '#f43f5e',
-              rose: '#e11d48',
-              hot: '#fb7185',
-              soft: '#fff1f5',
-              blush: '#ffe4ed',
-              black: '#09090b',
-              charcoal: '#18181b',
-              dark: '#27272a'
+            deeppink: {
+              50: '#fff0f6',
+              100: '#ffe4ee',
+              200: '#ffb3ce',
+              300: '#ff80ac',
+              400: '#ff4d8d',
+              500: '#ff2d75', // HỒNG ĐẬM CHÍNH
+              600: '#e1146b',
+              700: '#be185d',
+              800: '#9d174d',
+              900: '#831843',
+              950: '#4c0519',
+            },
+            jetblack: {
+              DEFAULT: '#09090b',
+              800: '#18181b',
+              900: '#121215',
+              950: '#000000',
             }
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
           }
         }
       }
     }
   </script>
 </head>
-<body class="bg-[#fafafa] text-zinc-900 antialiased min-h-screen flex flex-col pb-24 md:pb-12">
+<body class="bg-gradient-to-b from-[#ffe5ef] via-[#fff0f6] to-[#ffdce9] text-zinc-950 antialiased min-h-screen flex flex-col pb-24 md:pb-12">
 
-  <!-- ================= TOP NOTIFICATION BAR ================= -->
-  <div class="bg-zinc-950 text-white text-xs py-2 px-4 text-center font-medium border-b border-zinc-800">
+  <!-- ================= TOP NOTIFICATION BAR (JET BLACK & DEEP PINK) ================= -->
+  <div class="bg-zinc-950 text-white text-xs py-2 px-4 text-center font-medium border-b-2 border-deeppink-500">
     <div class="max-w-6xl mx-auto flex items-center justify-center gap-2">
-      <span class="inline-block animate-pulse">🌸</span>
-      <span><strong>Ưu Đãi Đặc Biệt:</strong> Tặng ngay voucher <strong>500.000đ/người</strong> khi rủ bạn bè đăng ký tour từ 2 người!</span>
-      <a href="#bookingSection" class="text-rose-400 underline hover:text-rose-300 ml-1 font-bold">Nhận voucher →</a>
+      <span class="inline-block animate-pulse text-base">💖</span>
+      <span class="font-outfit font-bold"><strong>Ưu Đãi Đặc Biệt:</strong> Tặng ngay voucher <span class="text-deeppink-400 font-extrabold">500.000đ/người</span> khi rủ bạn bè đăng ký tour từ 2 người!</span>
+      <a href="#bookingSection" class="text-deeppink-400 underline hover:text-white ml-1 font-black font-outfit">Nhận voucher →</a>
     </div>
   </div>
 
-  <!-- ================= HEADER NAVIGATION ================= -->
-  <header class="sticky top-0 z-40 glass-nav border-b border-rose-100 shadow-sm transition-all duration-300">
+  <!-- ================= HEADER NAVIGATION (GLASS WITH DEEP PINK ACCENT) ================= -->
+  <header class="sticky top-0 z-40 glass-nav-deep-pink shadow-sm transition-all duration-300">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       
-      <!-- Brand Logo with Pink & Black Vibe -->
+      <!-- Brand Logo with Deep Pink Ring -->
       <a href="#" class="flex items-center gap-3 group">
         <div class="relative">
-          <div class="w-11 h-11 rounded-full overflow-hidden border-2 border-rose-500 shadow-md group-hover:scale-105 transition">
+          <div class="w-11 h-11 rounded-full overflow-hidden border-2 border-deeppink-500 shadow-md group-hover:scale-105 transition">
             <img src="images/hanh-vivu-avatar.jpg" alt="Hạnh vivu Avatar" class="w-full h-full object-cover">
           </div>
-          <span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-rose-500 border-2 border-white rounded-full"></span>
+          <span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-deeppink-500 border-2 border-white rounded-full"></span>
         </div>
         <div>
-          <div class="text-lg md:text-xl font-black tracking-tight text-zinc-950 flex items-center gap-1.5">
+          <div class="text-lg md:text-xl font-black tracking-tight text-zinc-950 font-outfit flex items-center gap-1.5">
             <span>Hạnh vivu</span>
-            <span class="text-[10px] px-2 py-0.5 rounded-full bg-rose-100 text-rose-600 font-extrabold hidden sm:inline-block">China Travel 🌸</span>
+            <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-deeppink-500 text-white font-extrabold hidden sm:inline-block shadow-sm">
+              China Travel 💖
+            </span>
           </div>
-          <p class="text-[10px] text-zinc-500 font-medium">Du Lịch Trung Quốc Vừa Chill Vừa Đẹp</p>
+          <p class="text-[10px] text-zinc-600 font-bold">Du Lịch Trung Quốc Vừa Chill Vừa Đẹp</p>
         </div>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-bold text-zinc-700">
-        <a href="#toursSection" class="hover:text-rose-600 transition">Tuyến Tour Chill</a>
-        <a href="#aboutSection" class="hover:text-rose-600 transition">Về Hạnh vivu</a>
-        <a href="#gallerySection" class="hover:text-rose-600 transition">Góc Sống Ảo 📸</a>
-        <a href="#servicesSection" class="hover:text-rose-600 transition">Visa & eSIM</a>
-        <a href="#guideSection" class="hover:text-rose-600 transition">Tips Đi Tour</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-extrabold font-outfit text-zinc-800">
+        <a href="#toursSection" class="hover:text-deeppink-600 transition">Tuyến Tour Hot 🔥</a>
+        <a href="#aboutSection" class="hover:text-deeppink-600 transition">Về Hạnh vivu ✨</a>
+        <a href="#gallerySection" class="hover:text-deeppink-600 transition">Góc Sống Ảo 📸</a>
+        <a href="#servicesSection" class="hover:text-deeppink-600 transition">Visa & eSIM 🛡️</a>
+        <a href="#guideSection" class="hover:text-deeppink-600 transition">Tips Đi Tour 💡</a>
       </nav>
 
       <!-- CTA Buttons Desktop -->
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://www.facebook.com/profile.php?id=61557176072493" target="_blank" rel="noopener noreferrer" 
-           class="p-2.5 rounded-full text-zinc-700 bg-rose-50 hover:bg-rose-100 hover:text-rose-600 transition" title="Fanpage Facebook Hạnh vivu">
+           class="p-2.5 rounded-full text-zinc-900 bg-white border border-deeppink-200 hover:bg-deeppink-500 hover:text-white transition shadow-sm" title="Fanpage Facebook Hạnh vivu">
           <i data-lucide="facebook" class="w-4 h-4"></i>
         </a>
         <a href="https://zalo.me/0911328128" target="_blank" rel="noopener noreferrer"
-           class="px-5 py-2.5 rounded-full bg-zinc-950 hover:bg-rose-600 text-white font-extrabold text-xs md:text-sm shadow-md transition flex items-center gap-2 group">
-          <span class="w-2 h-2 rounded-full bg-rose-400 group-hover:bg-white animate-pulse"></span>
+           class="px-5 py-2.5 rounded-full bg-zinc-950 hover:bg-deeppink-500 text-white font-black font-outfit text-xs md:text-sm shadow-md transition flex items-center gap-2 group border border-deeppink-500">
+          <span class="w-2 h-2 rounded-full bg-deeppink-400 group-hover:bg-white animate-pulse"></span>
           <span>Zalo: 0911.328.128</span>
         </a>
       </div>
 
       <!-- Mobile Menu Button -->
-      <button id="mobileMenuBtn" type="button" class="md:hidden p-2 rounded-xl text-zinc-800 hover:bg-rose-50 focus:outline-none" aria-label="Menu">
-        <i data-lucide="menu" class="w-6 h-6"></i>
+      <button id="mobileMenuBtn" type="button" class="md:hidden p-2 rounded-xl text-zinc-900 hover:bg-deeppink-100 focus:outline-none" aria-label="Menu">
+        <i data-lucide="menu" class="w-6 h-6 text-deeppink-600"></i>
       </button>
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-rose-100 px-4 py-4 space-y-3 shadow-lg">
-      <a href="#toursSection" class="block py-2 text-sm font-bold text-zinc-800 hover:text-rose-600 border-b border-rose-50">✨ Tuyến Tour Hot 2026</a>
-      <a href="#aboutSection" class="block py-2 text-sm font-bold text-zinc-800 hover:text-rose-600 border-b border-rose-50">🌸 Về Hạnh vivu</a>
-      <a href="#gallerySection" class="block py-2 text-sm font-bold text-zinc-800 hover:text-rose-600 border-b border-rose-50">📸 Sổ Tay Sống Ảo</a>
-      <a href="#servicesSection" class="block py-2 text-sm font-bold text-zinc-800 hover:text-rose-600 border-b border-rose-50">🛡️ Dịch Vụ Visa & eSIM</a>
-      <a href="#guideSection" class="block py-2 text-sm font-bold text-zinc-800 hover:text-rose-600 border-b border-rose-50">💡 Cẩm Nang Bỏ Túi</a>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b-2 border-deeppink-500 px-4 py-4 space-y-3 shadow-xl">
+      <a href="#toursSection" class="block py-2 text-sm font-extrabold font-outfit text-zinc-900 hover:text-deeppink-600 border-b border-deeppink-100">🔥 Tuyến Tour Hot 2026</a>
+      <a href="#aboutSection" class="block py-2 text-sm font-extrabold font-outfit text-zinc-900 hover:text-deeppink-600 border-b border-deeppink-100">💖 Về Hạnh vivu</a>
+      <a href="#gallerySection" class="block py-2 text-sm font-extrabold font-outfit text-zinc-900 hover:text-deeppink-600 border-b border-deeppink-100">📸 Sổ Tay Sống Ảo</a>
+      <a href="#servicesSection" class="block py-2 text-sm font-extrabold font-outfit text-zinc-900 hover:text-deeppink-600 border-b border-deeppink-100">🛡️ Dịch Vụ Visa & eSIM</a>
+      <a href="#guideSection" class="block py-2 text-sm font-extrabold font-outfit text-zinc-900 hover:text-deeppink-600 border-b border-deeppink-100">💡 Cẩm Nang Bỏ Túi</a>
       <div class="pt-2 flex items-center gap-2">
-        <a href="https://zalo.me/0911328128" target="_blank" class="w-full text-center py-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-extrabold text-sm shadow-md">
+        <a href="https://zalo.me/0911328128" target="_blank" class="w-full text-center py-3 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-sm shadow-md">
           Nhắn Zalo Nhận Lịch Trình Ngay
         </a>
       </div>
     </div>
   </header>
 
-  <!-- ================= HERO SECTION (CHILL, BRIGHT, PINK & BLACK) ================= -->
-  <section class="relative bg-gradient-to-b from-rose-100/70 via-pink-50/40 to-white overflow-hidden py-14 md:py-20">
-    <!-- Playful Background Blobs -->
-    <div class="absolute -top-20 -left-20 w-80 h-80 bg-rose-200/50 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute top-1/2 -right-20 w-96 h-96 bg-pink-300/30 rounded-full blur-3xl pointer-events-none"></div>
+  <!-- ================= HERO SECTION (DEEP PINK & JET BLACK CONTRAST) ================= -->
+  <section class="relative overflow-hidden py-14 md:py-20">
+    <!-- Ambient Glow Blobs -->
+    <div class="absolute -top-20 -left-20 w-96 h-96 bg-deeppink-300/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-20 w-96 h-96 bg-deeppink-400/30 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="relative max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       
       <!-- Hero Left: Content -->
       <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-rose-200 shadow-sm text-xs font-black text-rose-600">
-          <span>🌸</span>
-          <span class="tracking-wide uppercase">Du Lịch Kiểu Mới • Vừa Chill Vừa Tươi Sáng</span>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border-2 border-deeppink-500 shadow-sm text-xs font-black font-outfit text-deeppink-600">
+          <span class="text-sm">💖</span>
+          <span class="tracking-wider uppercase">Du Lịch Kiểu Mới • Vừa Chill Vừa Rực Rỡ</span>
         </div>
 
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 leading-tight tracking-tight">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 font-outfit leading-tight tracking-tight">
           Khám Phá Trung Hoa <br>
-          <span class="text-rose-500 underline decoration-rose-300 decoration-wavy decoration-2">Thật Chill & Tươi Sáng</span> <br>
+          <span class="text-deep-pink-gradient underline decoration-deeppink-500 decoration-wavy decoration-2">Thật Chill & Tươi Sáng</span> <br>
           Cùng Hạnh vivu
         </h1>
 
-        <p class="text-sm md:text-base text-zinc-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+        <p class="text-sm md:text-base text-zinc-700 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
           Tạm biệt những chuyến tour chạy show mệt nhoài và các điểm ép mua sắm! Cùng <strong>Hạnh vivu</strong> tận hưởng những sớm mai thức dậy ngắm núi tuyết rực rỡ, dạo bước cổ trấn sông nước thơ mộng và gom trọn những khung hình <strong>sống ảo nghìn like</strong>.
         </p>
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
           <a href="#toursSection" 
-             class="w-full sm:w-auto px-8 py-4 rounded-full bg-zinc-950 hover:bg-rose-600 text-white font-extrabold text-sm shadow-xl transition flex items-center justify-center gap-2 group">
-            <i data-lucide="compass" class="w-4 h-4 text-rose-400 group-hover:text-white transition"></i>
+             class="w-full sm:w-auto px-8 py-4 rounded-full bg-zinc-950 hover:bg-deeppink-600 text-white font-black font-outfit text-sm shadow-xl transition flex items-center justify-center gap-2 border-2 border-zinc-950 hover:border-deeppink-600">
+            <i data-lucide="compass" class="w-4 h-4 text-deeppink-400"></i>
             <span>Xem Các Tuyến Tour Hot 2026</span>
           </a>
           <a href="#bookingSection" 
-             class="w-full sm:w-auto px-8 py-4 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-extrabold text-sm shadow-lg shadow-rose-500/30 transition flex items-center justify-center gap-2 pulse-pink-btn">
+             class="w-full sm:w-auto px-8 py-4 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-sm shadow-lg shadow-deeppink-500/40 transition flex items-center justify-center gap-2 pulse-deep-pink-btn">
             <i data-lucide="message-circle" class="w-4 h-4"></i>
             <span>Tư Vấn Miễn Phí 1-1</span>
           </a>
         </div>
 
-        <!-- 4 Quick Highlights -->
-        <div class="pt-6 border-t border-rose-100 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+        <!-- 4 Quick Highlights in Black & Pink -->
+        <div class="pt-6 border-t-2 border-deeppink-200 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
           <div class="space-y-0.5">
-            <div class="text-2xl font-black text-zinc-950">100%</div>
-            <div class="text-[11px] text-zinc-500 font-semibold">Tuyến Tour No-Shop</div>
+            <div class="text-2xl font-black font-outfit text-zinc-950">100%</div>
+            <div class="text-[11px] text-zinc-600 font-bold">Tuyến Tour No-Shop</div>
           </div>
           <div class="space-y-0.5">
-            <div class="text-2xl font-black text-rose-500">4-5★</div>
-            <div class="text-[11px] text-zinc-500 font-semibold">Khách sạn nghỉ dưỡng</div>
+            <div class="text-2xl font-black font-outfit text-deeppink-600">4-5★</div>
+            <div class="text-[11px] text-zinc-600 font-bold">Khách sạn nghỉ dưỡng</div>
           </div>
           <div class="space-y-0.5">
-            <div class="text-2xl font-black text-zinc-950">99.8%</div>
-            <div class="text-[11px] text-zinc-500 font-semibold">Tỷ lệ đậu Visa đoàn</div>
+            <div class="text-2xl font-black font-outfit text-zinc-950">99.8%</div>
+            <div class="text-[11px] text-zinc-600 font-bold">Tỷ lệ đậu Visa đoàn</div>
           </div>
           <div class="space-y-0.5">
-            <div class="text-2xl font-black text-rose-500">24/7</div>
-            <div class="text-[11px] text-zinc-500 font-semibold">Chăm sóc suốt chuyến</div>
+            <div class="text-2xl font-black font-outfit text-deeppink-600">24/7</div>
+            <div class="text-[11px] text-zinc-600 font-bold">Chăm sóc suốt chuyến</div>
           </div>
         </div>
       </div>
 
-      <!-- Hero Right: Chic Polaroid Showcase Card -->
+      <!-- Hero Right: Chic Polaroid Card with Deep Pink Border -->
       <div class="lg:col-span-5 relative">
         <div class="relative mx-auto max-w-sm">
-          <!-- Main Polaroid Card -->
-          <div class="polaroid-card rounded-3xl border border-rose-200">
+          <div class="polaroid-deep-pink">
             <div class="relative rounded-2xl overflow-hidden h-[430px]">
               <img src="images/hanh-vivu-hero.jpg" 
                    alt="Hạnh vivu tại núi tuyết và rừng thu Trung Quốc" 
                    class="w-full h-full object-cover">
               
-              <!-- Floating Pill Tags -->
+              <!-- Floating Tag -->
               <div class="absolute top-3 left-3">
-                <span class="px-3 py-1 rounded-full bg-zinc-950/85 backdrop-blur-sm text-white text-[11px] font-extrabold flex items-center gap-1 shadow">
-                  <span>🌸</span>
-                  <span>Ảnh thật của Hạnh vivu</span>
+                <span class="px-3.5 py-1 rounded-full bg-zinc-950/90 text-white text-[11px] font-black font-outfit flex items-center gap-1 shadow-md border border-deeppink-500">
+                  <span class="text-deeppink-400">★</span>
+                  <span>Ảnh thật 100% của Hạnh vivu</span>
                 </span>
               </div>
 
-              <div class="absolute bottom-3 left-3 right-3 p-3 rounded-2xl bg-white/90 backdrop-blur-md text-zinc-900 shadow-md">
+              <div class="absolute bottom-3 left-3 right-3 p-3.5 rounded-2xl bg-white/95 backdrop-blur-md text-zinc-950 shadow-md border border-deeppink-200">
                 <div class="flex items-center justify-between text-xs">
-                  <span class="font-extrabold text-rose-600 flex items-center gap-1">
-                    <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                  <span class="font-black font-outfit text-deeppink-600 flex items-center gap-1">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-deeppink-500"></i>
                     <span>Tứ Xuyên • Cửu Trại Câu</span>
                   </span>
-                  <span class="text-[10px] px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 font-bold">No-Shop</span>
+                  <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-deeppink-500 text-white font-black font-outfit">No-Shop</span>
                 </div>
                 <p class="text-xs font-bold text-zinc-900 mt-1">"Tự mình khám phá để mang đến hành trình chill nhất cho bạn!"</p>
               </div>
             </div>
-            <div class="pt-3 px-2 flex items-center justify-between text-xs text-zinc-400 font-medium">
-              <span>📍 Chuyến khảo sát thực tế</span>
-              <span class="text-rose-500 font-bold">#Hanhvivu #ChinaTravel</span>
+            <div class="pt-3 px-2 flex items-center justify-between text-xs text-zinc-500 font-semibold font-outfit">
+              <span>📍 Khảo sát thực tế</span>
+              <span class="text-deeppink-600 font-extrabold">#Hanhvivu #ChinaTravel</span>
             </div>
           </div>
 
-          <!-- Cute Floating Sticker -->
-          <div class="absolute -bottom-4 -right-3 bg-white p-3 rounded-2xl border-2 border-rose-400 shadow-xl flex items-center gap-2 transform rotate-3">
+          <!-- Cute Floating Badge -->
+          <div class="absolute -bottom-4 -right-3 bg-zinc-950 text-white p-3.5 rounded-2xl border-2 border-deeppink-500 shadow-xl flex items-center gap-2 transform rotate-3">
             <span class="text-2xl">📸</span>
             <div>
-              <div class="text-[11px] font-black text-zinc-900">Góc Sống Ảo Triệu View</div>
-              <div class="text-[9px] text-zinc-500">Mùa thu vàng & Núi tuyết</div>
+              <div class="text-[11px] font-black font-outfit text-white">Góc Sống Ảo Triệu View</div>
+              <div class="text-[9px] text-deeppink-300 font-bold">Mùa thu vàng & Núi tuyết</div>
             </div>
           </div>
         </div>
@@ -226,90 +240,90 @@
     </div>
   </section>
 
-  <!-- ================= VỀ HẠNH VIVU (CHILL TRAVEL BLOGGER VIBE) ================= -->
-  <section id="aboutSection" class="py-16 bg-white border-b border-rose-100">
+  <!-- ================= VỀ HẠNH VIVU SECTION ================= -->
+  <section id="aboutSection" class="py-16 bg-white border-y-2 border-deeppink-200">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
       
-      <!-- Real Portrait with Chic Frame -->
+      <!-- Real Portrait with Deep Pink & Black Frame -->
       <div class="md:col-span-5 flex flex-col items-center">
         <div class="relative">
-          <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-[2.5rem] overflow-hidden border-4 border-rose-400 shadow-2xl relative z-10 pink-glow">
+          <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-[2.5rem] overflow-hidden border-4 border-deeppink-500 shadow-2xl relative z-10 deep-pink-glow">
             <img src="images/hanh-vivu-avatar.jpg" 
                  alt="Hạnh vivu nụ cười rạng rỡ" 
                  class="w-full h-full object-cover hover:scale-105 transition duration-500">
           </div>
-          <!-- Decorative Pink Glow Halo -->
-          <div class="absolute inset-0 rounded-[2.5rem] bg-rose-400/25 blur-xl transform scale-105 -z-0"></div>
+          <!-- Decorative Glow Halo -->
+          <div class="absolute inset-0 rounded-[2.5rem] bg-deeppink-500/25 blur-xl transform scale-105 -z-0"></div>
           
           <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 z-20 whitespace-nowrap">
-            <span class="px-5 py-2 rounded-full bg-zinc-950 text-white text-xs font-black shadow-lg border border-rose-400 flex items-center gap-1.5">
+            <span class="px-5 py-2 rounded-full bg-zinc-950 text-white text-xs font-black font-outfit shadow-lg border-2 border-deeppink-500 flex items-center gap-1.5">
               <span>💖</span>
               <span>Founder • Hạnh vivu</span>
             </span>
           </div>
         </div>
-        <p class="text-xs text-zinc-400 mt-5 font-semibold text-center">Nụ cười rạng rỡ giữa rừng thu lá vàng Trung Hoa 🍂</p>
+        <p class="text-xs text-zinc-500 mt-5 font-bold text-center font-outfit">Nụ cười rạng rỡ giữa rừng thu lá vàng Trung Hoa 🍂</p>
       </div>
 
       <!-- Story & Chill USPs -->
       <div class="md:col-span-7 space-y-4">
-        <div class="inline-flex items-center gap-1.5 text-rose-600 font-extrabold text-xs tracking-wider uppercase">
+        <div class="inline-flex items-center gap-1.5 text-deeppink-600 font-black font-outfit text-xs tracking-wider uppercase">
           <i data-lucide="sparkles" class="w-4 h-4"></i>
           <span>Về Hạnh vivu & Tinh Thần Du Lịch Thảnh Thơi</span>
         </div>
 
-        <h2 class="text-2xl sm:text-3xl font-black text-zinc-950 leading-tight">
+        <h2 class="text-2xl sm:text-3xl font-black text-zinc-950 font-outfit leading-tight">
           "Đi du lịch là để chữa lành, nạp năng lượng và gom lại những nụ cười đẹp nhất!"
         </h2>
 
-        <p class="text-zinc-600 text-sm leading-relaxed">
+        <p class="text-zinc-600 text-sm leading-relaxed font-medium">
           Chào bạn, mình là <strong>Hạnh vivu</strong>! Từng đi qua rất nhiều cung đường từ Bắc Kinh, Thượng Hải đến Lệ Giang, Cửu Trại Câu, Hạnh hiểu rằng điều khiến bạn băn khoăn nhất khi đi tour là: <em>Sợ bị lùa vào các điểm mua sắm, sợ lịch trình dậy sớm chạy show mệt nhoài, sợ ăn uống không hợp khẩu vị</em>.
         </p>
 
-        <p class="text-zinc-600 text-sm leading-relaxed">
+        <p class="text-zinc-600 text-sm leading-relaxed font-medium">
           Ở nhà Hạnh vivu, tụi mình làm tour theo phong cách <strong>vừa chill vừa tươi sáng</strong>: ngủ đủ giấc, khách sạn 4-5 sao tiện nghi, ăn ngon chuẩn vị bản địa, và đặc biệt <strong>100% thời gian là để bạn thư thái ngắm cảnh và chụp ảnh sống ảo</strong>.
         </p>
 
-        <!-- 4 Chill Values Grid (Black & Pink) -->
+        <!-- 4 Values Grid (Black & Deep Pink) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
           
-          <div class="p-4 rounded-2xl bg-rose-50/80 border border-rose-200 flex items-start gap-3">
-            <div class="p-2.5 rounded-xl bg-zinc-950 text-white shrink-0">
-              <i data-lucide="smile" class="w-4 h-4 text-rose-400"></i>
+          <div class="p-4 rounded-2xl bg-deeppink-50 border-2 border-deeppink-200 flex items-start gap-3">
+            <div class="p-2.5 rounded-xl bg-zinc-950 text-white shrink-0 border border-deeppink-500">
+              <i data-lucide="smile" class="w-4 h-4 text-deeppink-400"></i>
             </div>
             <div>
-              <h4 class="text-xs font-black text-zinc-900">100% No-Shop Thoải Mái</h4>
-              <p class="text-[11px] text-zinc-500 mt-0.5">Không ép mua ngọc bích, tơ lụa. Đi chơi là phải vui vẻ!</p>
+              <h4 class="text-xs font-black font-outfit text-zinc-950">100% No-Shop Thoải Mái</h4>
+              <p class="text-[11px] text-zinc-600 mt-0.5">Không ép mua ngọc bích, tơ lụa. Đi chơi là phải vui vẻ!</p>
             </div>
           </div>
 
-          <div class="p-4 rounded-2xl bg-white border border-rose-200 shadow-sm flex items-start gap-3">
-            <div class="p-2.5 rounded-xl bg-rose-500 text-white shrink-0">
+          <div class="p-4 rounded-2xl bg-white border-2 border-deeppink-200 shadow-sm flex items-start gap-3">
+            <div class="p-2.5 rounded-xl bg-deeppink-500 text-white shrink-0">
               <i data-lucide="hotel" class="w-4 h-4"></i>
             </div>
             <div>
-              <h4 class="text-xs font-black text-zinc-900">Khách Sạn 4-5 Sao Đẹp Xịn</h4>
-              <p class="text-[11px] text-zinc-500 mt-0.5">Phòng ốc rộng rãi, giường êm, vị trí trung tâm tiện đi dạo đêm.</p>
+              <h4 class="text-xs font-black font-outfit text-zinc-950">Khách Sạn 4-5 Sao Đẹp Xịn</h4>
+              <p class="text-[11px] text-zinc-600 mt-0.5">Phòng ốc rộng rãi, giường êm, vị trí trung tâm tiện đi dạo đêm.</p>
             </div>
           </div>
 
-          <div class="p-4 rounded-2xl bg-white border border-rose-200 shadow-sm flex items-start gap-3">
-            <div class="p-2.5 rounded-xl bg-zinc-950 text-white shrink-0">
-              <i data-lucide="file-check-2" class="w-4 h-4 text-rose-400"></i>
+          <div class="p-4 rounded-2xl bg-white border-2 border-deeppink-200 shadow-sm flex items-start gap-3">
+            <div class="p-2.5 rounded-xl bg-zinc-950 text-white shrink-0 border border-deeppink-500">
+              <i data-lucide="file-check-2" class="w-4 h-4 text-deeppink-400"></i>
             </div>
             <div>
-              <h4 class="text-xs font-black text-zinc-900">Visa Đoàn Siêu Gọn Nhẹ</h4>
-              <p class="text-[11px] text-zinc-500 mt-0.5">Chỉ cần chụp ảnh hộ chiếu, không chứng minh tài chính rườm rà.</p>
+              <h4 class="text-xs font-black font-outfit text-zinc-950">Visa Đoàn Siêu Gọn Nhẹ</h4>
+              <p class="text-[11px] text-zinc-600 mt-0.5">Chỉ cần chụp ảnh hộ chiếu, không chứng minh tài chính rườm rà.</p>
             </div>
           </div>
 
-          <div class="p-4 rounded-2xl bg-rose-50/80 border border-rose-200 flex items-start gap-3">
-            <div class="p-2.5 rounded-xl bg-rose-500 text-white shrink-0">
+          <div class="p-4 rounded-2xl bg-deeppink-50 border-2 border-deeppink-200 flex items-start gap-3">
+            <div class="p-2.5 rounded-xl bg-deeppink-500 text-white shrink-0">
               <i data-lucide="wifi" class="w-4 h-4"></i>
             </div>
             <div>
-              <h4 class="text-xs font-black text-zinc-900">Cài App Alipay & eSIM 4G</h4>
-              <p class="text-[11px] text-zinc-500 mt-0.5">Hỗ trợ quét mã thanh toán, lướt Facebook/Zalo/TikTok tẹt ga.</p>
+              <h4 class="text-xs font-black font-outfit text-zinc-950">Cài App Alipay & eSIM 4G</h4>
+              <p class="text-[11px] text-zinc-600 mt-0.5">Hỗ trợ quét mã thanh toán, lướt Facebook/Zalo/TikTok tẹt ga.</p>
             </div>
           </div>
 
@@ -320,78 +334,80 @@
     </div>
   </section>
 
-  <!-- ================= GALLERY: SỔ TAY SỐNG ẢO THỰC TẾ ================= -->
-  <section id="gallerySection" class="py-16 bg-[#fff8fa] border-b border-rose-100">
-    <div class="max-w-6xl mx-auto px-4">
+  <!-- ================= GALLERY: SỔ TAY SỐNG ẢO THỰC TẾ (JET BLACK WITH NEON PINK) ================= -->
+  <section id="gallerySection" class="py-16 bg-zinc-950 text-white border-b-2 border-deeppink-500 relative overflow-hidden">
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-deeppink-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
       
       <div class="text-center max-w-2xl mx-auto space-y-2 mb-10">
-        <div class="inline-flex items-center gap-1.5 text-rose-600 font-extrabold text-xs uppercase tracking-wider">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-deeppink-500/20 text-deeppink-400 border border-deeppink-500/40 font-black font-outfit text-xs uppercase tracking-wider">
           <span>📸</span>
           <span>Sổ Tay Sống Ảo Cùng Hạnh vivu</span>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-black text-zinc-950">
-          Những Khoảnh Khắc <span class="text-rose-500">Đẹp Lung Linh</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white font-outfit">
+          Những Khoảnh Khắc <span class="text-deeppink-400">Đẹp Lung Linh</span>
         </h2>
-        <p class="text-xs sm:text-sm text-zinc-500">
+        <p class="text-xs sm:text-sm text-zinc-400">
           Hình ảnh thực tế 100% của Hạnh vivu trên từng cung đường trải nghiệm tại Trung Hoa.
         </p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         
-        <!-- Polaroid 1: Temple -->
-        <div class="polaroid-card rounded-2xl border border-rose-100">
+        <!-- Polaroid 1 -->
+        <div class="polaroid-deep-pink text-zinc-950">
           <div class="rounded-xl overflow-hidden h-72 relative group">
             <img src="images/hanh-vivu-temple.jpg" alt="Mùa thu vàng bên mái chùa cổ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-zinc-950/80 backdrop-blur-sm text-white text-[10px] font-bold">
+            <span class="absolute top-2.5 left-2.5 px-3 py-1 rounded-full bg-zinc-950 text-deeppink-400 text-[10px] font-black font-outfit border border-deeppink-500 shadow">
               🍂 Mùa Thu Vàng
             </span>
           </div>
           <div class="pt-3 px-1 text-center">
-            <p class="text-xs font-black text-zinc-900">Check-in Mùa Thu Rực Rỡ</p>
-            <p class="text-[11px] text-zinc-400 mt-0.5">Bên mái chùa cổ kính trầm mặc</p>
+            <p class="text-xs font-black font-outfit text-zinc-950">Check-in Mùa Thu Rực Rỡ</p>
+            <p class="text-[11px] text-zinc-500 mt-0.5 font-medium">Bên mái chùa cổ kính trầm mặc</p>
           </div>
         </div>
 
-        <!-- Polaroid 2: Hero Arms Wide -->
-        <div class="polaroid-card rounded-2xl border border-rose-100">
+        <!-- Polaroid 2 -->
+        <div class="polaroid-deep-pink text-zinc-950">
           <div class="rounded-xl overflow-hidden h-72 relative group">
             <img src="images/hanh-vivu-hero.jpg" alt="Ôm trọn đất trời trước núi tuyết" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-rose-600 text-white text-[10px] font-bold">
+            <span class="absolute top-2.5 left-2.5 px-3 py-1 rounded-full bg-deeppink-500 text-white text-[10px] font-black font-outfit shadow">
               🏔️ Núi Tuyết 4.500m
             </span>
           </div>
           <div class="pt-3 px-1 text-center">
-            <p class="text-xs font-black text-zinc-900">Ôm Trọn Đất Trời Hùng Vĩ</p>
-            <p class="text-[11px] text-zinc-400 mt-0.5">Không khí se lạnh tinh khôi</p>
+            <p class="text-xs font-black font-outfit text-zinc-950">Ôm Trọn Đất Trời Hùng Vĩ</p>
+            <p class="text-[11px] text-zinc-500 mt-0.5 font-medium">Không khí se lạnh tinh khôi</p>
           </div>
         </div>
 
-        <!-- Polaroid 3: Relaxing on Bench -->
-        <div class="polaroid-card rounded-2xl border border-rose-100">
+        <!-- Polaroid 3 -->
+        <div class="polaroid-deep-pink text-zinc-950">
           <div class="rounded-xl overflow-hidden h-72 relative group">
             <img src="images/hanh-vivu-relax.jpg" alt="Thư thái thưởng trà ngắm cảnh núi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-zinc-950/80 backdrop-blur-sm text-white text-[10px] font-bold">
+            <span class="absolute top-2.5 left-2.5 px-3 py-1 rounded-full bg-zinc-950 text-deeppink-400 text-[10px] font-black font-outfit border border-deeppink-500 shadow">
               ☕ Thư Giãn Thảnh Thơi
             </span>
           </div>
           <div class="pt-3 px-1 text-center">
-            <p class="text-xs font-black text-zinc-900">Một Chút Chill Bình Yên</p>
-            <p class="text-[11px] text-zinc-400 mt-0.5">Nhâm nhi tách trà ấm ngắm rừng phong</p>
+            <p class="text-xs font-black font-outfit text-zinc-950">Một Chút Chill Bình Yên</p>
+            <p class="text-[11px] text-zinc-500 mt-0.5 font-medium">Nhâm nhi tách trà ấm ngắm rừng phong</p>
           </div>
         </div>
 
-        <!-- Polaroid 4: Sweet Portrait -->
-        <div class="polaroid-card rounded-2xl border border-rose-100">
+        <!-- Polaroid 4 -->
+        <div class="polaroid-deep-pink text-zinc-950">
           <div class="rounded-xl overflow-hidden h-72 relative group">
             <img src="images/hanh-vivu-avatar.jpg" alt="Nụ cười tươi tắn của Hạnh vivu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-rose-600 text-white text-[10px] font-bold">
+            <span class="absolute top-2.5 left-2.5 px-3 py-1 rounded-full bg-deeppink-500 text-white text-[10px] font-black font-outfit shadow">
               💖 Nụ Cười Rạng Rỡ
             </span>
           </div>
           <div class="pt-3 px-1 text-center">
-            <p class="text-xs font-black text-zinc-900">Đồng Hành Tận Tâm</p>
-            <p class="text-[11px] text-zinc-400 mt-0.5">Sẵn sàng lưu giữ khoảnh khắc cho bạn</p>
+            <p class="text-xs font-black font-outfit text-zinc-950">Đồng Hành Tận Tâm</p>
+            <p class="text-[11px] text-zinc-500 mt-0.5 font-medium">Sẵn sàng lưu giữ khoảnh khắc cho bạn</p>
           </div>
         </div>
 
@@ -400,89 +416,89 @@
     </div>
   </section>
 
-  <!-- ================= TOURS EXPLORER (CHILL & BRIGHT) ================= -->
-  <section id="toursSection" class="py-16 bg-white">
+  <!-- ================= TOURS EXPLORER (HỒNG ĐẬM & ĐEN) ================= -->
+  <section id="toursSection" class="py-16">
     <div class="max-w-6xl mx-auto px-4">
       
       <!-- Section Title -->
       <div class="text-center max-w-2xl mx-auto space-y-2 mb-10">
-        <div class="inline-flex items-center gap-1.5 text-rose-600 font-black text-xs uppercase tracking-wider">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-deeppink-100 text-deeppink-600 border border-deeppink-200 font-black font-outfit text-xs uppercase tracking-wider">
           <span>🔥</span>
           <span>Tuyển Tập Tour Tuyến Được Yêu Thích Nhất</span>
         </div>
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-zinc-950">
-          Lịch Trình <span class="text-rose-500">Đáng Trải Nghiệm Nhất 2026</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-zinc-950 font-outfit">
+          Lịch Trình <span class="text-deeppink-600">Đáng Trải Nghiệm Nhất 2026</span>
         </h2>
-        <p class="text-xs sm:text-sm text-zinc-500">
+        <p class="text-xs sm:text-sm text-zinc-600 font-medium">
           Tất cả đều là tour tuyển chọn, bay thẳng hoặc tàu cao tốc, khách sạn 4-5 sao, giá trọn gói minh bạch.
         </p>
       </div>
 
-      <!-- Category Filter Tabs (Black & Pink) -->
+      <!-- Category Filter Tabs (Black & Deep Pink) -->
       <div class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
-        <button type="button" data-filter="all" class="tab-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-zinc-200 bg-white text-zinc-800 hover:border-zinc-950 whitespace-nowrap transition cursor-pointer">
+        <button type="button" data-filter="all" class="tab-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-black border-2 border-zinc-900 bg-white text-zinc-900 whitespace-nowrap transition cursor-pointer">
           Tất Cả Tuyến
         </button>
-        <button type="button" data-filter="nature" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-zinc-200 bg-white hover:bg-rose-50 text-zinc-700 whitespace-nowrap transition cursor-pointer">
+        <button type="button" data-filter="nature" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-black border-2 border-deeppink-200 bg-white hover:bg-deeppink-50 text-zinc-800 whitespace-nowrap transition cursor-pointer">
           🍁 Cửu Trại Câu – Tiên Cảnh
         </button>
-        <button type="button" data-filter="ancient" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-zinc-200 bg-white hover:bg-rose-50 text-zinc-700 whitespace-nowrap transition cursor-pointer">
+        <button type="button" data-filter="ancient" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-black border-2 border-deeppink-200 bg-white hover:bg-deeppink-50 text-zinc-800 whitespace-nowrap transition cursor-pointer">
           🏮 Thượng Hải – Ô Trấn 9.990K
         </button>
-        <button type="button" data-filter="heritage" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-zinc-200 bg-white hover:bg-rose-50 text-zinc-700 whitespace-nowrap transition cursor-pointer">
+        <button type="button" data-filter="heritage" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-black border-2 border-deeppink-200 bg-white hover:bg-deeppink-50 text-zinc-800 whitespace-nowrap transition cursor-pointer">
           🏯 Bắc Kinh – Tử Cấm Thành
         </button>
-        <button type="button" data-filter="yunnan" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-zinc-200 bg-white hover:bg-rose-50 text-zinc-700 whitespace-nowrap transition cursor-pointer">
+        <button type="button" data-filter="yunnan" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-black border-2 border-deeppink-200 bg-white hover:bg-deeppink-50 text-zinc-800 whitespace-nowrap transition cursor-pointer">
           🏔️ Lệ Giang – Shangri-La
         </button>
-        <button type="button" data-filter="budget" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-zinc-200 bg-white hover:bg-rose-50 text-zinc-700 whitespace-nowrap transition cursor-pointer">
+        <button type="button" data-filter="budget" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-black border-2 border-deeppink-200 bg-white hover:bg-deeppink-50 text-zinc-800 whitespace-nowrap transition cursor-pointer">
           🚆 Nam Ninh Chi Dạ 3.480K
         </button>
-        <button type="button" data-filter="winter" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-zinc-200 bg-white hover:bg-rose-50 text-zinc-700 whitespace-nowrap transition cursor-pointer">
+        <button type="button" data-filter="winter" class="tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-black border-2 border-deeppink-200 bg-white hover:bg-deeppink-50 text-zinc-800 whitespace-nowrap transition cursor-pointer">
           ❄️ Cáp Nhĩ Tân Mùa Tuyết
         </button>
       </div>
 
-      <!-- Tour Cards Grid (Chill & Fresh Cards) -->
+      <!-- Tour Cards Grid (Deep Pink & Black Theme) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- CARD 1: CỬU TRẠI CÂU - THÀNH ĐÔ - TRÙNG KHÁNH -->
-        <div class="tour-card-chill rounded-3xl overflow-hidden flex flex-col justify-between" data-category="nature">
+        <!-- CARD 1: CỬU TRẠI CÂU -->
+        <div class="tour-card-deep-pink overflow-hidden flex flex-col justify-between" data-category="nature">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="images/hanh-vivu-temple.jpg" 
                    alt="Cửu Trại Câu Thành Đô Trùng Khánh thực tế" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                <span class="px-2.5 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-extrabold uppercase shadow">✓ No Shop</span>
-                <span class="px-2.5 py-1 rounded-full bg-rose-500 text-white text-[10px] font-extrabold uppercase shadow">★ Khách sạn 5*</span>
+                <span class="px-3 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-black font-outfit uppercase shadow border border-deeppink-500">✓ No Shop</span>
+                <span class="px-3 py-1 rounded-full bg-deeppink-500 text-white text-[10px] font-black font-outfit uppercase shadow">★ Khách sạn 5*</span>
               </div>
-              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-[11px] font-bold flex items-center gap-1">
-                <i data-lucide="clock" class="w-3 h-3 text-rose-300"></i>
+              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-sm text-white text-[11px] font-bold font-outfit flex items-center gap-1">
+                <i data-lucide="clock" class="w-3 h-3 text-deeppink-400"></i>
                 <span>6 Ngày 5 Đêm</span>
               </div>
             </div>
 
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-1.5 text-xs font-bold text-rose-600">
+              <div class="flex items-center gap-1.5 text-xs font-black font-outfit text-deeppink-600">
                 <i data-lucide="plane-takeoff" class="w-3.5 h-3.5"></i>
                 <span>Bay West Air • 4 Chặng Tàu Cao Tốc</span>
               </div>
               
-              <h3 class="text-base font-black text-zinc-950 leading-snug hover:text-rose-600 transition">
+              <h3 class="text-base font-black font-outfit text-zinc-950 leading-snug hover:text-deeppink-600 transition">
                 Trùng Khánh – Thành Đô – Cửu Trại Câu "Thiên Đường Hạ Giới"
               </h3>
 
-              <ul class="text-xs text-zinc-600 space-y-1.5 pt-1">
+              <ul class="text-xs text-zinc-700 space-y-1.5 pt-1 font-medium">
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Hồ nước ngũ sắc Cửu Trại Câu đẹp nao lòng</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Phố Hồng Nhai Động Trùng Khánh lên đèn lung linh</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Thưởng thức Lẩu cay Tứ Xuyên & xem Biến Mặt</span>
                 </li>
               </ul>
@@ -490,62 +506,62 @@
           </div>
 
           <div class="p-5 pt-0">
-            <div class="pt-3 border-t border-rose-100 flex items-center justify-between mb-3">
+            <div class="pt-3 border-t-2 border-deeppink-100 flex items-center justify-between mb-3">
               <div>
-                <span class="text-[10px] text-zinc-400 line-through">17.500.000đ</span>
-                <div class="text-xl font-black text-rose-600">15.990.000đ</div>
+                <span class="text-[10px] text-zinc-400 line-through font-bold">17.500.000đ</span>
+                <div class="text-xl font-black font-outfit text-deeppink-600">15.990.000đ</div>
               </div>
-              <span class="text-[11px] font-bold text-zinc-900 bg-rose-100 px-2.5 py-1 rounded-full">Trọn gói</span>
+              <span class="text-[11px] font-black font-outfit text-zinc-950 bg-deeppink-100 px-3 py-1 rounded-full border border-deeppink-300">Trọn gói</span>
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-              <button type="button" data-tour="jiuzhaigou" class="open-itinerary-btn py-2.5 px-3 rounded-full border border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white font-bold text-xs transition text-center cursor-pointer">
+              <button type="button" data-tour="jiuzhaigou" class="open-itinerary-btn py-2.5 px-3 rounded-full border-2 border-zinc-950 text-zinc-950 hover:bg-zinc-950 hover:text-white font-black font-outfit text-xs transition text-center cursor-pointer">
                 Lịch Trình
               </button>
-              <button type="button" data-tour-title="Trùng Khánh – Thành Đô – Cửu Trại Câu 6N5Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs shadow-md transition text-center cursor-pointer">
-                Đặt Ngay 🌸
+              <button type="button" data-tour-title="Trùng Khánh – Thành Đô – Cửu Trại Câu 6N5Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-xs shadow-md transition text-center cursor-pointer">
+                Đặt Ngay 💖
               </button>
             </div>
           </div>
         </div>
 
-        <!-- CARD 2: THƯỢNG HẢI - Ô TRẤN - HÀNG CHÂU -->
-        <div class="tour-card-chill rounded-3xl overflow-hidden flex flex-col justify-between" data-category="ancient">
+        <!-- CARD 2: THƯỢNG HẢI - Ô TRẤN -->
+        <div class="tour-card-deep-pink overflow-hidden flex flex-col justify-between" data-category="ancient">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=800&q=80" 
                    alt="Ô Trấn Giang Nam sông nước" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                <span class="px-2.5 py-1 rounded-full bg-rose-600 text-white text-[10px] font-extrabold uppercase shadow">🔥 Giá Sốc 9.990K</span>
-                <span class="px-2.5 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-extrabold uppercase shadow">Đường Bay</span>
+                <span class="px-3 py-1 rounded-full bg-deeppink-600 text-white text-[10px] font-black font-outfit uppercase shadow">🔥 Giá Sốc 9.990K</span>
+                <span class="px-3 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-black font-outfit uppercase shadow border border-deeppink-500">Đường Bay</span>
               </div>
-              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-[11px] font-bold flex items-center gap-1">
-                <i data-lucide="clock" class="w-3 h-3 text-rose-300"></i>
+              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-sm text-white text-[11px] font-bold font-outfit flex items-center gap-1">
+                <i data-lucide="clock" class="w-3 h-3 text-deeppink-400"></i>
                 <span>6 Ngày 5 Đêm</span>
               </div>
             </div>
 
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-1.5 text-xs font-bold text-rose-600">
+              <div class="flex items-center gap-1.5 text-xs font-black font-outfit text-deeppink-600">
                 <i data-lucide="plane" class="w-3.5 h-3.5"></i>
                 <span>Bay Khứ Hồi • Khách Sạn 4-5 Sao</span>
               </div>
               
-              <h3 class="text-base font-black text-zinc-950 leading-snug hover:text-rose-600 transition">
+              <h3 class="text-base font-black font-outfit text-zinc-950 leading-snug hover:text-deeppink-600 transition">
                 Thượng Hải – Ô Trấn – Hàng Châu: Giang Nam Mộng Mơ
               </h3>
 
-              <ul class="text-xs text-zinc-600 space-y-1.5 pt-1">
+              <ul class="text-xs text-zinc-700 space-y-1.5 pt-1 font-medium">
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Ngủ đêm tại Ô Trấn cổ – Venice phương Đông</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Du thuyền Tây Hồ Hàng Châu ngắm liễu rủ thơ mộng</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Bến Thượng Hải hoa lệ & Tháp Đông Phương Minh Châu</span>
                 </li>
               </ul>
@@ -553,62 +569,62 @@
           </div>
 
           <div class="p-5 pt-0">
-            <div class="pt-3 border-t border-rose-100 flex items-center justify-between mb-3">
+            <div class="pt-3 border-t-2 border-deeppink-100 flex items-center justify-between mb-3">
               <div>
-                <span class="text-[10px] text-zinc-400 line-through">12.990.000đ</span>
-                <div class="text-xl font-black text-rose-600">9.990.000đ</div>
+                <span class="text-[10px] text-zinc-400 line-through font-bold">12.990.000đ</span>
+                <div class="text-xl font-black font-outfit text-deeppink-600">9.990.000đ</div>
               </div>
-              <span class="text-[11px] font-bold text-rose-700 bg-rose-100 px-2.5 py-1 rounded-full">Siêu Hot</span>
+              <span class="text-[11px] font-black font-outfit text-deeppink-700 bg-deeppink-100 px-3 py-1 rounded-full border border-deeppink-300">Siêu Hot</span>
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-              <button type="button" data-tour="shanghai" class="open-itinerary-btn py-2.5 px-3 rounded-full border border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white font-bold text-xs transition text-center cursor-pointer">
+              <button type="button" data-tour="shanghai" class="open-itinerary-btn py-2.5 px-3 rounded-full border-2 border-zinc-950 text-zinc-950 hover:bg-zinc-950 hover:text-white font-black font-outfit text-xs transition text-center cursor-pointer">
                 Lịch Trình
               </button>
-              <button type="button" data-tour-title="Thượng Hải – Ô Trấn – Hàng Châu 6N5Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs shadow-md transition text-center cursor-pointer">
-                Đặt Ngay 🌸
+              <button type="button" data-tour-title="Thượng Hải – Ô Trấn – Hàng Châu 6N5Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-xs shadow-md transition text-center cursor-pointer">
+                Đặt Ngay 💖
               </button>
             </div>
           </div>
         </div>
 
-        <!-- CARD 3: BẮC KINH - TỬ CẤM THÀNH - VẠN LÝ TRƯỜNG THÀNH -->
-        <div class="tour-card-chill rounded-3xl overflow-hidden flex flex-col justify-between" data-category="heritage">
+        <!-- CARD 3: BẮC KINH -->
+        <div class="tour-card-deep-pink overflow-hidden flex flex-col justify-between" data-category="heritage">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1584646098378-0874589d76b1?auto=format&fit=crop&w=800&q=80" 
                    alt="Tử Cấm Thành Cố Cung Bắc Kinh" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                <span class="px-2.5 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-extrabold uppercase shadow">👑 Di Sản Triều Đại</span>
-                <span class="px-2.5 py-1 rounded-full bg-rose-500 text-white text-[10px] font-extrabold uppercase shadow">Vịt Quay BK</span>
+                <span class="px-3 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-black font-outfit uppercase shadow border border-deeppink-500">👑 Di Sản Triều Đại</span>
+                <span class="px-3 py-1 rounded-full bg-deeppink-500 text-white text-[10px] font-black font-outfit uppercase shadow">Vịt Quay BK</span>
               </div>
-              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-[11px] font-bold flex items-center gap-1">
-                <i data-lucide="clock" class="w-3 h-3 text-rose-300"></i>
+              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-sm text-white text-[11px] font-bold font-outfit flex items-center gap-1">
+                <i data-lucide="clock" class="w-3 h-3 text-deeppink-400"></i>
                 <span>5 Ngày 4 Đêm</span>
               </div>
             </div>
 
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-1.5 text-xs font-bold text-rose-600">
+              <div class="flex items-center gap-1.5 text-xs font-black font-outfit text-deeppink-600">
                 <i data-lucide="plane-takeoff" class="w-3.5 h-3.5"></i>
                 <span>Bay Thẳng • Khách Sạn 4-5 Sao</span>
               </div>
               
-              <h3 class="text-base font-black text-zinc-950 leading-snug hover:text-rose-600 transition">
+              <h3 class="text-base font-black font-outfit text-zinc-950 leading-snug hover:text-deeppink-600 transition">
                 Bắc Kinh – Tử Cấm Thành – Vạn Lý Trường Thành
               </h3>
 
-              <ul class="text-xs text-zinc-600 space-y-1.5 pt-1">
+              <ul class="text-xs text-zinc-700 space-y-1.5 pt-1 font-medium">
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Khám phá Tử Cấm Thành nguy nga triều Minh - Thanh</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Chinh phục Vạn Lý Trường Thành kỳ vĩ</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Thưởng thức Vịt Quay Bắc Kinh chuẩn vị cung đình</span>
                 </li>
               </ul>
@@ -616,62 +632,62 @@
           </div>
 
           <div class="p-5 pt-0">
-            <div class="pt-3 border-t border-rose-100 flex items-center justify-between mb-3">
+            <div class="pt-3 border-t-2 border-deeppink-100 flex items-center justify-between mb-3">
               <div>
-                <span class="text-[10px] text-zinc-400 line-through">16.200.000đ</span>
-                <div class="text-xl font-black text-rose-600">14.500.000đ</div>
+                <span class="text-[10px] text-zinc-400 line-through font-bold">16.200.000đ</span>
+                <div class="text-xl font-black font-outfit text-deeppink-600">14.500.000đ</div>
               </div>
-              <span class="text-[11px] font-bold text-zinc-900 bg-rose-100 px-2.5 py-1 rounded-full">Đẳng Cấp</span>
+              <span class="text-[11px] font-black font-outfit text-zinc-950 bg-deeppink-100 px-3 py-1 rounded-full border border-deeppink-300">Đẳng Cấp</span>
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-              <button type="button" data-tour="beijing" class="open-itinerary-btn py-2.5 px-3 rounded-full border border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white font-bold text-xs transition text-center cursor-pointer">
+              <button type="button" data-tour="beijing" class="open-itinerary-btn py-2.5 px-3 rounded-full border-2 border-zinc-950 text-zinc-950 hover:bg-zinc-950 hover:text-white font-black font-outfit text-xs transition text-center cursor-pointer">
                 Lịch Trình
               </button>
-              <button type="button" data-tour-title="Bắc Kinh – Tử Cấm Thành – Vạn Lý Trường Thành 5N4Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs shadow-md transition text-center cursor-pointer">
-                Đặt Ngay 🌸
+              <button type="button" data-tour-title="Bắc Kinh – Tử Cấm Thành – Vạn Lý Trường Thành 5N4Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-xs shadow-md transition text-center cursor-pointer">
+                Đặt Ngay 💖
               </button>
             </div>
           </div>
         </div>
 
-        <!-- CARD 4: LỆ GIANG - SHANGRI-LA - ĐẠI LÝ -->
-        <div class="tour-card-chill rounded-3xl overflow-hidden flex flex-col justify-between" data-category="yunnan">
+        <!-- CARD 4: LỆ GIANG -->
+        <div class="tour-card-deep-pink overflow-hidden flex flex-col justify-between" data-category="yunnan">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1513415564515-763d91423bdd?auto=format&fit=crop&w=800&q=80" 
                    alt="Lệ Giang Núi Tuyết Ngọc Long" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                <span class="px-2.5 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-extrabold uppercase shadow">✓ No Shop</span>
-                <span class="px-2.5 py-1 rounded-full bg-rose-500 text-white text-[10px] font-extrabold uppercase shadow">Cáp Treo 4.506m</span>
+                <span class="px-3 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-black font-outfit uppercase shadow border border-deeppink-500">✓ No Shop</span>
+                <span class="px-3 py-1 rounded-full bg-deeppink-500 text-white text-[10px] font-black font-outfit uppercase shadow">Cáp Treo 4.506m</span>
               </div>
-              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-[11px] font-bold flex items-center gap-1">
-                <i data-lucide="clock" class="w-3 h-3 text-rose-300"></i>
+              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-sm text-white text-[11px] font-bold font-outfit flex items-center gap-1">
+                <i data-lucide="clock" class="w-3 h-3 text-deeppink-400"></i>
                 <span>6 Ngày 5 Đêm</span>
               </div>
             </div>
 
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-1.5 text-xs font-bold text-rose-600">
+              <div class="flex items-center gap-1.5 text-xs font-black font-outfit text-deeppink-600">
                 <i data-lucide="mountain" class="w-3.5 h-3.5"></i>
                 <span>Vân Nam • Tàu Cao Tốc Đời Mới</span>
               </div>
               
-              <h3 class="text-base font-black text-zinc-950 leading-snug hover:text-rose-600 transition">
+              <h3 class="text-base font-black font-outfit text-zinc-950 leading-snug hover:text-deeppink-600 transition">
                 Côn Minh – Lệ Giang – Shangri-La – Đại Lý
               </h3>
 
-              <ul class="text-xs text-zinc-600 space-y-1.5 pt-1">
+              <ul class="text-xs text-zinc-700 space-y-1.5 pt-1 font-medium">
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
-                  <span>Cáp treo lên Núi Tuyết Ngọc Long quanh năm mây trắng</span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
+                  <span>Cáp treo lên Núi Tuyết Ngọc Long ngút ngàn mây trắng</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Thành cổ Lệ Giang 800 năm & Tu viện Tùng Tán Lâm</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Show đại vũ kịch ngoài trời "Ấn Tượng Lệ Giang"</span>
                 </li>
               </ul>
@@ -679,62 +695,62 @@
           </div>
 
           <div class="p-5 pt-0">
-            <div class="pt-3 border-t border-rose-100 flex items-center justify-between mb-3">
+            <div class="pt-3 border-t-2 border-deeppink-100 flex items-center justify-between mb-3">
               <div>
-                <span class="text-[10px] text-zinc-400 line-through">19.990.000đ</span>
-                <div class="text-xl font-black text-rose-600">17.990.000đ</div>
+                <span class="text-[10px] text-zinc-400 line-through font-bold">19.990.000đ</span>
+                <div class="text-xl font-black font-outfit text-deeppink-600">17.990.000đ</div>
               </div>
-              <span class="text-[11px] font-bold text-zinc-900 bg-rose-100 px-2.5 py-1 rounded-full">Trải Nghiệm</span>
+              <span class="text-[11px] font-black font-outfit text-zinc-950 bg-deeppink-100 px-3 py-1 rounded-full border border-deeppink-300">Trải Nghiệm</span>
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-              <button type="button" data-tour="lijiang" class="open-itinerary-btn py-2.5 px-3 rounded-full border border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white font-bold text-xs transition text-center cursor-pointer">
+              <button type="button" data-tour="lijiang" class="open-itinerary-btn py-2.5 px-3 rounded-full border-2 border-zinc-950 text-zinc-950 hover:bg-zinc-950 hover:text-white font-black font-outfit text-xs transition text-center cursor-pointer">
                 Lịch Trình
               </button>
-              <button type="button" data-tour-title="Côn Minh – Lệ Giang – Shangri-La – Đại Lý 6N5Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs shadow-md transition text-center cursor-pointer">
-                Đặt Ngay 🌸
+              <button type="button" data-tour-title="Côn Minh – Lệ Giang – Shangri-La – Đại Lý 6N5Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-xs shadow-md transition text-center cursor-pointer">
+                Đặt Ngay 💖
               </button>
             </div>
           </div>
         </div>
 
-        <!-- CARD 5: NAM NINH CHI DẠ - THÁI BÌNH CỔ TRẤN (TIẾT KIỆM) -->
-        <div class="tour-card-chill rounded-3xl overflow-hidden flex flex-col justify-between" data-category="budget">
+        <!-- CARD 5: NAM NINH CHI DẠ -->
+        <div class="tour-card-deep-pink overflow-hidden flex flex-col justify-between" data-category="budget">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" 
                    alt="Nam Ninh Chi Dạ đèn lồng phố đêm" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                <span class="px-2.5 py-1 rounded-full bg-rose-500 text-white text-[10px] font-extrabold uppercase shadow">⚡ Siêu Tiết Kiệm</span>
-                <span class="px-2.5 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-extrabold uppercase shadow">Đường Bộ</span>
+                <span class="px-3 py-1 rounded-full bg-deeppink-500 text-white text-[10px] font-black font-outfit uppercase shadow">⚡ Siêu Tiết Kiệm</span>
+                <span class="px-3 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-black font-outfit uppercase shadow border border-deeppink-500">Đường Bộ</span>
               </div>
-              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-[11px] font-bold flex items-center gap-1">
-                <i data-lucide="clock" class="w-3 h-3 text-rose-300"></i>
+              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-sm text-white text-[11px] font-bold font-outfit flex items-center gap-1">
+                <i data-lucide="clock" class="w-3 h-3 text-deeppink-400"></i>
                 <span>3 Ngày 2 Đêm</span>
               </div>
             </div>
 
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-1.5 text-xs font-bold text-rose-600">
+              <div class="flex items-center gap-1.5 text-xs font-black font-outfit text-deeppink-600">
                 <i data-lucide="bus" class="w-3.5 h-3.5"></i>
                 <span>Khởi Hành Từ Hà Nội • Thứ 6 Hàng Tuần</span>
               </div>
               
-              <h3 class="text-base font-black text-zinc-950 leading-snug hover:text-rose-600 transition">
+              <h3 class="text-base font-black font-outfit text-zinc-950 leading-snug hover:text-deeppink-600 transition">
                 Hà Nội – Nam Ninh Chi Dạ – Thái Bình Cổ Trấn
               </h3>
 
-              <ul class="text-xs text-zinc-600 space-y-1.5 pt-1">
+              <ul class="text-xs text-zinc-700 space-y-1.5 pt-1 font-medium">
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Đêm Nam Ninh Chi Dạ rực rỡ phố ẩm thực không ngủ</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Thái Bình Cổ Trấn – Phim trường Hoa Thiên Cốt</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Thủ tục visa đoàn cực nhanh, chỉ cần ảnh hộ chiếu</span>
                 </li>
               </ul>
@@ -742,62 +758,62 @@
           </div>
 
           <div class="p-5 pt-0">
-            <div class="pt-3 border-t border-rose-100 flex items-center justify-between mb-3">
+            <div class="pt-3 border-t-2 border-deeppink-100 flex items-center justify-between mb-3">
               <div>
-                <span class="text-[10px] text-zinc-400 line-through">4.200.000đ</span>
-                <div class="text-xl font-black text-rose-600">3.480.000đ</div>
+                <span class="text-[10px] text-zinc-400 line-through font-bold">4.200.000đ</span>
+                <div class="text-xl font-black font-outfit text-deeppink-600">3.480.000đ</div>
               </div>
-              <span class="text-[11px] font-bold text-zinc-900 bg-rose-100 px-2.5 py-1 rounded-full">Giá Sốc</span>
+              <span class="text-[11px] font-black font-outfit text-zinc-950 bg-deeppink-100 px-3 py-1 rounded-full border border-deeppink-300">Giá Sốc</span>
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-              <button type="button" data-tour="nanning" class="open-itinerary-btn py-2.5 px-3 rounded-full border border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white font-bold text-xs transition text-center cursor-pointer">
+              <button type="button" data-tour="nanning" class="open-itinerary-btn py-2.5 px-3 rounded-full border-2 border-zinc-950 text-zinc-950 hover:bg-zinc-950 hover:text-white font-black font-outfit text-xs transition text-center cursor-pointer">
                 Lịch Trình
               </button>
-              <button type="button" data-tour-title="Hà Nội – Nam Ninh Chi Dạ – Thái Bình Cổ Trấn 3N2Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs shadow-md transition text-center cursor-pointer">
-                Đặt Ngay 🌸
+              <button type="button" data-tour-title="Hà Nội – Nam Ninh Chi Dạ – Thái Bình Cổ Trấn 3N2Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-xs shadow-md transition text-center cursor-pointer">
+                Đặt Ngay 💖
               </button>
             </div>
           </div>
         </div>
 
-        <!-- CARD 6: CÁP NHĨ TÂN - LÀNG TUYẾT (MÙA ĐÔNG) -->
-        <div class="tour-card-chill rounded-3xl overflow-hidden flex flex-col justify-between" data-category="winter">
+        <!-- CARD 6: CÁP NHĨ TÂN -->
+        <div class="tour-card-deep-pink overflow-hidden flex flex-col justify-between" data-category="winter">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=800&q=80" 
                    alt="Cáp Nhĩ Tân Lâu đài Băng Tuyết phát sáng" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                <span class="px-2.5 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-extrabold uppercase shadow">❄️ Thế Giới Băng Đăng</span>
-                <span class="px-2.5 py-1 rounded-full bg-rose-500 text-white text-[10px] font-extrabold uppercase shadow">Mùa Đông Độc Bản</span>
+                <span class="px-3 py-1 rounded-full bg-zinc-950 text-white text-[10px] font-black font-outfit uppercase shadow border border-deeppink-500">❄️ Thế Giới Băng Đăng</span>
+                <span class="px-3 py-1 rounded-full bg-deeppink-500 text-white text-[10px] font-black font-outfit uppercase shadow">Mùa Đông Độc Bản</span>
               </div>
-              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-[11px] font-bold flex items-center gap-1">
-                <i data-lucide="clock" class="w-3 h-3 text-rose-300"></i>
+              <div class="absolute bottom-2.5 right-3 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-sm text-white text-[11px] font-bold font-outfit flex items-center gap-1">
+                <i data-lucide="clock" class="w-3 h-3 text-deeppink-400"></i>
                 <span>6 Ngày 5 Đêm</span>
               </div>
             </div>
 
             <div class="p-5 space-y-3">
-              <div class="flex items-center gap-1.5 text-xs font-bold text-rose-600">
+              <div class="flex items-center gap-1.5 text-xs font-black font-outfit text-deeppink-600">
                 <i data-lucide="snowflake" class="w-3.5 h-3.5"></i>
                 <span>Đường Bay Khứ Hồi • Khách Sạn Sưởi Ấm</span>
               </div>
               
-              <h3 class="text-base font-black text-zinc-950 leading-snug hover:text-rose-600 transition">
+              <h3 class="text-base font-black font-outfit text-zinc-950 leading-snug hover:text-deeppink-600 transition">
                 Bắc Kinh – Cáp Nhĩ Tân – Làng Tuyết Cổ Tích
               </h3>
 
-              <ul class="text-xs text-zinc-600 space-y-1.5 pt-1">
+              <ul class="text-xs text-zinc-700 space-y-1.5 pt-1 font-medium">
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Lâu đài băng tuyết khổng lồ lộng lẫy về đêm</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Làng tuyết Hương Tuyết như thế giới cổ tích</span>
                 </li>
                 <li class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-deeppink-500 shrink-0"></span>
                   <span>Trải nghiệm suối khoáng nóng lộ thiên giữa trời tuyết</span>
                 </li>
               </ul>
@@ -805,20 +821,20 @@
           </div>
 
           <div class="p-5 pt-0">
-            <div class="pt-3 border-t border-rose-100 flex items-center justify-between mb-3">
+            <div class="pt-3 border-t-2 border-deeppink-100 flex items-center justify-between mb-3">
               <div>
-                <span class="text-[10px] text-zinc-400 line-through">26.900.000đ</span>
-                <div class="text-xl font-black text-rose-600">24.990.000đ</div>
+                <span class="text-[10px] text-zinc-400 line-through font-bold">26.900.000đ</span>
+                <div class="text-xl font-black font-outfit text-deeppink-600">24.990.000đ</div>
               </div>
-              <span class="text-[11px] font-bold text-zinc-900 bg-rose-100 px-2.5 py-1 rounded-full">Độc Đáo</span>
+              <span class="text-[11px] font-black font-outfit text-zinc-950 bg-deeppink-100 px-3 py-1 rounded-full border border-deeppink-300">Độc Đáo</span>
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-              <button type="button" data-tour="harbin" class="open-itinerary-btn py-2.5 px-3 rounded-full border border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white font-bold text-xs transition text-center cursor-pointer">
+              <button type="button" data-tour="harbin" class="open-itinerary-btn py-2.5 px-3 rounded-full border-2 border-zinc-950 text-zinc-950 hover:bg-zinc-950 hover:text-white font-black font-outfit text-xs transition text-center cursor-pointer">
                 Lịch Trình
               </button>
-              <button type="button" data-tour-title="Bắc Kinh – Cáp Nhĩ Tân – Làng Tuyết 6N5Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs shadow-md transition text-center cursor-pointer">
-                Đặt Ngay 🌸
+              <button type="button" data-tour-title="Bắc Kinh – Cáp Nhĩ Tân – Làng Tuyết 6N5Đ" class="open-booking-btn py-2.5 px-3 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-xs shadow-md transition text-center cursor-pointer">
+                Đặt Ngay 💖
               </button>
             </div>
           </div>
@@ -829,19 +845,19 @@
     </div>
   </section>
 
-  <!-- ================= SERVICES (MODERN CHIC CARDS) ================= -->
-  <section id="servicesSection" class="py-16 bg-[#fafafa] border-y border-rose-100">
+  <!-- ================= SERVICES (DEEP PINK & JET BLACK) ================= -->
+  <section id="servicesSection" class="py-16 bg-white border-y-2 border-deeppink-200">
     <div class="max-w-6xl mx-auto px-4">
       
       <div class="text-center max-w-2xl mx-auto space-y-2 mb-12">
-        <div class="inline-flex items-center gap-1.5 text-rose-600 font-black text-xs uppercase tracking-wider">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-deeppink-100 text-deeppink-600 border border-deeppink-200 font-black font-outfit text-xs uppercase tracking-wider">
           <span>🛡️</span>
           <span>Hỗ Trợ Đồng Hành Trọn Gói</span>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-black text-zinc-950">
-          Đi Trung Quốc Thảnh Thơi Như <span class="text-rose-500">Đi Cà Phê Cuối Tuần</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-zinc-950 font-outfit">
+          Đi Trung Quốc Thảnh Thơi Như <span class="text-deeppink-600">Đi Cà Phê Cuối Tuần</span>
         </h2>
-        <p class="text-xs sm:text-sm text-zinc-500">
+        <p class="text-xs sm:text-sm text-zinc-600 font-medium">
           Mọi lo lắng về visa, rào cản ngôn ngữ và thanh toán không tiền mặt đã có Hạnh vivu lo trọn vẹn!
         </p>
       </div>
@@ -849,63 +865,63 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- Service 1: Visa -->
-        <div class="p-7 rounded-[2rem] bg-white border border-rose-100 hover:border-rose-300 shadow-sm transition space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-zinc-950 text-white flex items-center justify-center font-bold shadow-md">
-            <i data-lucide="id-card" class="w-6 h-6 text-rose-400"></i>
+        <div class="p-7 rounded-[2rem] bg-[#fff5f9] border-2 border-deeppink-200 hover:border-deeppink-500 shadow-sm transition space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-zinc-950 text-white flex items-center justify-center font-bold shadow-md border border-deeppink-500">
+            <i data-lucide="id-card" class="w-6 h-6 text-deeppink-400"></i>
           </div>
-          <h3 class="text-lg font-black text-zinc-950">Visa Đoàn Nhanh Gọn</h3>
-          <p class="text-xs text-zinc-600 leading-relaxed">
+          <h3 class="text-lg font-black font-outfit text-zinc-950">Visa Đoàn Nhanh Gọn</h3>
+          <p class="text-xs text-zinc-600 leading-relaxed font-medium">
             Hỗ trợ visa đoàn điện tử siêu nhanh: chỉ cần gửi ảnh chụp hộ chiếu qua Zalo. Nhận kết quả nhanh chóng, tỷ lệ đậu 99.8%.
           </p>
-          <ul class="text-xs text-zinc-700 space-y-1.5 font-semibold pt-1">
+          <ul class="text-xs text-zinc-800 space-y-1.5 font-bold pt-1 font-outfit">
             <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+              <span class="w-2 h-2 rounded-full bg-deeppink-500"></span>
               <span>Không cần chứng minh tài chính</span>
             </li>
             <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+              <span class="w-2 h-2 rounded-full bg-deeppink-500"></span>
               <span>Bàn giao visa đúng hẹn, an tâm xuất cảnh</span>
             </li>
           </ul>
         </div>
 
         <!-- Service 2: App & eSIM -->
-        <div class="p-7 rounded-[2rem] bg-rose-50/60 border border-rose-200 hover:border-rose-300 shadow-sm transition space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-rose-500 text-white flex items-center justify-center font-bold shadow-md">
+        <div class="p-7 rounded-[2rem] bg-zinc-950 text-white border-2 border-deeppink-500 shadow-xl transition space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-deeppink-500 text-white flex items-center justify-center font-bold shadow-md">
             <i data-lucide="smartphone" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-lg font-black text-zinc-950">Alipay & eSIM Vượt Tường Lửa</h3>
-          <p class="text-xs text-zinc-600 leading-relaxed">
+          <h3 class="text-lg font-black font-outfit text-white">Alipay & eSIM Vượt Tường Lửa</h3>
+          <p class="text-xs text-zinc-300 leading-relaxed font-medium">
             Hướng dẫn liên kết thẻ Visa vào Alipay/WeChat Pay để quẹt mã mua trà sữa, đồ ăn vặt như người bản địa.
           </p>
-          <ul class="text-xs text-zinc-700 space-y-1.5 font-semibold pt-1">
+          <ul class="text-xs text-zinc-200 space-y-1.5 font-bold pt-1 font-outfit">
             <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-zinc-950"></span>
+              <span class="w-2 h-2 rounded-full bg-deeppink-400"></span>
               <span>Cung cấp eSIM dung lượng cao tốc độ 4G/5G</span>
             </li>
             <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-zinc-950"></span>
+              <span class="w-2 h-2 rounded-full bg-deeppink-400"></span>
               <span>Lướt Facebook, Zalo, YouTube, TikTok bình thường</span>
             </li>
           </ul>
         </div>
 
         <!-- Service 3: Private Tour -->
-        <div class="p-7 rounded-[2rem] bg-white border border-rose-100 hover:border-rose-300 shadow-sm transition space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-zinc-950 text-white flex items-center justify-center font-bold shadow-md">
-            <i data-lucide="heart-handshake" class="w-6 h-6 text-rose-400"></i>
+        <div class="p-7 rounded-[2rem] bg-[#fff5f9] border-2 border-deeppink-200 hover:border-deeppink-500 shadow-sm transition space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-zinc-950 text-white flex items-center justify-center font-bold shadow-md border border-deeppink-500">
+            <i data-lucide="heart-handshake" class="w-6 h-6 text-deeppink-400"></i>
           </div>
-          <h3 class="text-lg font-black text-zinc-950">Tour Riêng Thiết Kế Theo Gu</h3>
-          <p class="text-xs text-zinc-600 leading-relaxed">
+          <h3 class="text-lg font-black font-outfit text-zinc-950">Tour Riêng Thiết Kế Theo Gu</h3>
+          <p class="text-xs text-zinc-600 leading-relaxed font-medium">
             Dành cho nhóm bạn bè, gia đình thích tự do: ngủ muộn, ăn uống theo khẩu vị, check-in theo ý thích với xe riêng và HDV nhiệt tình.
           </p>
-          <ul class="text-xs text-zinc-700 space-y-1.5 font-semibold pt-1">
+          <ul class="text-xs text-zinc-800 space-y-1.5 font-bold pt-1 font-outfit">
             <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+              <span class="w-2 h-2 rounded-full bg-deeppink-500"></span>
               <span>Linh hoạt điểm dừng chân chụp ảnh</span>
             </li>
             <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+              <span class="w-2 h-2 rounded-full bg-deeppink-500"></span>
               <span>Bảo mật, riêng tư và thảnh thơi tối đa</span>
             </li>
           </ul>
@@ -917,61 +933,61 @@
   </section>
 
   <!-- ================= TRAVEL TIPS & FAQ (CHILL ACCORDION) ================= -->
-  <section id="guideSection" class="py-16 bg-white">
+  <section id="guideSection" class="py-16">
     <div class="max-w-4xl mx-auto px-4">
       
       <div class="text-center space-y-2 mb-10">
-        <div class="inline-flex items-center gap-1.5 text-rose-600 font-black text-xs uppercase tracking-wider">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-deeppink-100 text-deeppink-600 border border-deeppink-200 font-black font-outfit text-xs uppercase tracking-wider">
           <span>💡</span>
           <span>Bỏ Túi Mẹo Hay Cùng Hạnh vivu</span>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-black text-zinc-950">
-          Giải Đáp Mọi Băn Khoăn <span class="text-rose-500">Trước Khi Bay</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-zinc-950 font-outfit">
+          Giải Đáp Mọi Băn Khoăn <span class="text-deeppink-600">Trước Khi Bay</span>
         </h2>
       </div>
 
       <div class="space-y-3">
         
         <!-- FAQ 1 -->
-        <div class="bg-[#fafafa] rounded-2xl border border-rose-100 overflow-hidden shadow-sm">
-          <button type="button" class="accordion-header w-full px-5 py-4 text-left flex items-center justify-between font-bold text-sm text-zinc-900 hover:text-rose-600 transition">
+        <div class="bg-white rounded-2xl border-2 border-deeppink-200 overflow-hidden shadow-sm">
+          <button type="button" class="accordion-header w-full px-5 py-4 text-left flex items-center justify-between font-extrabold font-outfit text-sm text-zinc-950 hover:text-deeppink-600 transition">
             <span>1. Đi tour Trung Quốc No-Shop khác biệt gì so với tour thông thường?</span>
-            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-zinc-400 transition-transform duration-300"></i>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-deeppink-500 transition-transform duration-300"></i>
           </button>
-          <div class="accordion-content hidden px-5 pb-4 text-xs text-zinc-600 leading-relaxed border-t border-rose-100/60 pt-3">
+          <div class="accordion-content hidden px-5 pb-4 text-xs text-zinc-600 leading-relaxed border-t border-deeppink-100 pt-3 font-medium">
             Tour thông thường thường ghé 3 - 5 điểm mua sắm (ngọc bích, tơ lụa, cao su, thuốc bắc...) khiến thời gian tham quan bị cắt xén và mệt mỏi. Tour <strong>No-Shop</strong> của Hạnh vivu dành 100% thời gian cho bạn ngắm cảnh đẹp, chụp ảnh thỏa thích và nghỉ ngơi thoải mái, tuyệt đối không bị ép mua hàng.
           </div>
         </div>
 
         <!-- FAQ 2 -->
-        <div class="bg-[#fafafa] rounded-2xl border border-rose-100 overflow-hidden shadow-sm">
-          <button type="button" class="accordion-header w-full px-5 py-4 text-left flex items-center justify-between font-bold text-sm text-zinc-900 hover:text-rose-600 transition">
+        <div class="bg-white rounded-2xl border-2 border-deeppink-200 overflow-hidden shadow-sm">
+          <button type="button" class="accordion-header w-full px-5 py-4 text-left flex items-center justify-between font-extrabold font-outfit text-sm text-zinc-950 hover:text-deeppink-600 transition">
             <span>2. Thủ tục làm visa du lịch Trung Quốc có khó không? Cần chuẩn bị gì?</span>
-            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-zinc-400 transition-transform duration-300"></i>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-deeppink-500 transition-transform duration-300"></i>
           </button>
-          <div class="accordion-content hidden px-5 pb-4 text-xs text-zinc-600 leading-relaxed border-t border-rose-100/60 pt-3">
+          <div class="accordion-content hidden px-5 pb-4 text-xs text-zinc-600 leading-relaxed border-t border-deeppink-100 pt-3 font-medium">
             Rất đơn giản! Đối với các tour của Hạnh vivu, đa số áp dụng <strong>visa đoàn điện tử</strong>: Quý khách chỉ cần chụp ảnh mặt hộ chiếu (còn hạn trên 6 tháng) và 1 file ảnh chân dung phông trắng gửi qua Zalo. Không cần chứng minh tài chính hay giấy tờ phức tạp.
           </div>
         </div>
 
         <!-- FAQ 3 -->
-        <div class="bg-[#fafafa] rounded-2xl border border-rose-100 overflow-hidden shadow-sm">
-          <button type="button" class="accordion-header w-full px-5 py-4 text-left flex items-center justify-between font-bold text-sm text-zinc-900 hover:text-rose-600 transition">
+        <div class="bg-white rounded-2xl border-2 border-deeppink-200 overflow-hidden shadow-sm">
+          <button type="button" class="accordion-header w-full px-5 py-4 text-left flex items-center justify-between font-extrabold font-outfit text-sm text-zinc-950 hover:text-deeppink-600 transition">
             <span>3. Sang Trung Quốc có dùng được Facebook, Zalo, YouTube không?</span>
-            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-zinc-400 transition-transform duration-300"></i>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-deeppink-500 transition-transform duration-300"></i>
           </button>
-          <div class="accordion-content hidden px-5 pb-4 text-xs text-zinc-600 leading-relaxed border-t border-rose-100/60 pt-3">
+          <div class="accordion-content hidden px-5 pb-4 text-xs text-zinc-600 leading-relaxed border-t border-deeppink-100 pt-3 font-medium">
             Nếu dùng wifi khách sạn thông thường thì các app quốc tế sẽ bị chặn. Tuy nhiên, khi đi cùng Hạnh vivu, bạn sẽ được hướng dẫn lắp <strong>eSIM / SIM du lịch quốc tế</strong> đã kích hoạt sẵn tính năng vượt tường lửa (Roaming quốc tế), giúp bạn lướt Facebook, gọi Zalo, xem YouTube bình thường mà không cần cài đặt VPN phức tạp.
           </div>
         </div>
 
         <!-- FAQ 4 -->
-        <div class="bg-[#fafafa] rounded-2xl border border-rose-100 overflow-hidden shadow-sm">
-          <button type="button" class="accordion-header w-full px-5 py-4 text-left flex items-center justify-between font-bold text-sm text-zinc-900 hover:text-rose-600 transition">
+        <div class="bg-white rounded-2xl border-2 border-deeppink-200 overflow-hidden shadow-sm">
+          <button type="button" class="accordion-header w-full px-5 py-4 text-left flex items-center justify-between font-extrabold font-outfit text-sm text-zinc-950 hover:text-deeppink-600 transition">
             <span>4. Mình không biết tiếng Trung thì có đi tour được không?</span>
-            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-zinc-400 transition-transform duration-300"></i>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-deeppink-500 transition-transform duration-300"></i>
           </button>
-          <div class="accordion-content hidden px-5 pb-4 text-xs text-zinc-600 leading-relaxed border-t border-rose-100/60 pt-3">
+          <div class="accordion-content hidden px-5 pb-4 text-xs text-zinc-600 leading-relaxed border-t border-deeppink-100 pt-3 font-medium">
             Hoàn toàn yên tâm! Suốt hành trình có Hướng dẫn viên người Việt am hiểu văn hóa và HDV bản địa đồng hành 24/24. Ngoài ra, Hạnh vivu sẽ hướng dẫn bạn cài các ứng dụng dịch trực tiếp và quét mã QR thanh toán trên điện thoại.
           </div>
         </div>
@@ -981,24 +997,24 @@
     </div>
   </section>
 
-  <!-- ================= BOOKING & LEAD GENERATION FORM (BLACK & PINK LUXURY) ================= -->
-  <section id="bookingSection" class="py-16 bg-zinc-950 text-white relative overflow-hidden">
-    <!-- Ambient Pink Glow -->
-    <div class="absolute -top-32 -left-32 w-96 h-96 bg-rose-500/20 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl pointer-events-none"></div>
+  <!-- ================= BOOKING SECTION (PURE JET BLACK & DEEP PINK GLOW) ================= -->
+  <section id="bookingSection" class="py-16 bg-black text-white relative overflow-hidden border-t-2 border-deeppink-500">
+    <!-- Ambient Deep Pink Glow -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-deeppink-500/25 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-deeppink-600/25 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-4xl mx-auto px-4 relative z-10">
       
-      <div class="bg-zinc-900 rounded-[2.5rem] p-6 sm:p-10 shadow-2xl border border-rose-500/30">
+      <div class="bg-zinc-900 rounded-[2.5rem] p-6 sm:p-10 shadow-2xl border-2 border-deeppink-500 deep-pink-glow">
         
         <div class="text-center space-y-2 mb-8">
-          <span class="inline-block px-3.5 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/40 text-xs font-bold uppercase tracking-wider">
-            🌸 Nhận Ưu Đãi Giảm 500.000đ / Khách
+          <span class="inline-block px-4 py-1.5 rounded-full bg-deeppink-500 text-white font-black font-outfit text-xs uppercase tracking-wider shadow-md">
+            💖 Nhận Ưu Đãi Giảm 500.000đ / Khách
           </span>
-          <h2 class="text-2xl sm:text-3xl font-black text-white">
-            Nhận Lịch Trình Chi Tiết & <span class="text-rose-400">Tư Vấn Miễn Phí</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-white font-outfit">
+            Nhận Lịch Trình Chi Tiết & <span class="text-deeppink-400">Tư Vấn Miễn Phí</span>
           </h2>
-          <p class="text-xs sm:text-sm text-zinc-400">
+          <p class="text-xs sm:text-sm text-zinc-400 font-medium">
             Để lại thông tin, cô Hạnh vivu sẽ nhắn tin qua Zalo gửi lịch trình PDF đẹp lung linh cho bạn!
           </p>
         </div>
@@ -1006,22 +1022,22 @@
         <form class="tour-booking-form space-y-4">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-xs font-bold text-zinc-300 mb-1">Họ và tên của bạn <span class="text-rose-400">*</span></label>
+              <label class="block text-xs font-bold font-outfit text-zinc-200 mb-1">Họ và tên của bạn <span class="text-deeppink-400">*</span></label>
               <input type="text" name="name" required placeholder="Họ và tên" 
-                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border border-zinc-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 transition">
+                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border-2 border-zinc-700 text-white text-sm focus:outline-none focus:border-deeppink-500 transition">
             </div>
 
             <div>
-              <label class="block text-xs font-bold text-zinc-300 mb-1">Số điện thoại (Zalo) <span class="text-rose-400">*</span></label>
+              <label class="block text-xs font-bold font-outfit text-zinc-200 mb-1">Số điện thoại (Zalo) <span class="text-deeppink-400">*</span></label>
               <input type="tel" name="phone" required placeholder="Số điện thoại Zalo" 
-                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border border-zinc-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 transition">
+                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border-2 border-zinc-700 text-white text-sm focus:outline-none focus:border-deeppink-500 transition">
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-xs font-bold text-zinc-300 mb-1">Tuyến tour bạn quan tâm</label>
-              <select name="tour" class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border border-zinc-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 transition">
+              <label class="block text-xs font-bold font-outfit text-zinc-200 mb-1">Tuyến tour bạn quan tâm</label>
+              <select name="tour" class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border-2 border-zinc-700 text-white text-sm focus:outline-none focus:border-deeppink-500 transition">
                 <option value="Trùng Khánh – Thành Đô – Cửu Trại Câu (6N5Đ No Shop)">Cửu Trại Câu – Thành Đô – Trùng Khánh (6N5Đ No Shop)</option>
                 <option value="Thượng Hải – Ô Trấn – Hàng Châu (6N5Đ)">Thượng Hải – Ô Trấn – Hàng Châu (6N5Đ - 9.990K)</option>
                 <option value="Bắc Kinh – Tử Cấm Thành – Vạn Lý Trường Thành (5N4Đ)">Bắc Kinh – Tử Cấm Thành – Vạn Lý Trường Thành (5N4Đ)</option>
@@ -1033,30 +1049,30 @@
             </div>
 
             <div>
-              <label class="block text-xs font-bold text-zinc-300 mb-1">Thời gian dự kiến khởi hành</label>
+              <label class="block text-xs font-bold font-outfit text-zinc-200 mb-1">Thời gian dự kiến khởi hành</label>
               <input type="text" name="date" placeholder="Ví dụ: Giữa tháng 11, Noel, Tết..." 
-                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border border-zinc-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 transition">
+                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border-2 border-zinc-700 text-white text-sm focus:outline-none focus:border-deeppink-500 transition">
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-xs font-bold text-zinc-300 mb-1">Số lượng khách dự kiến</label>
+              <label class="block text-xs font-bold font-outfit text-zinc-200 mb-1">Số lượng khách dự kiến</label>
               <input type="text" name="guests" placeholder="Ví dụ: 2 người lớn, 1 trẻ em" 
-                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border border-zinc-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 transition">
+                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border-2 border-zinc-700 text-white text-sm focus:outline-none focus:border-deeppink-500 transition">
             </div>
 
             <div>
-              <label class="block text-xs font-bold text-zinc-300 mb-1">Ghi chú thêm (nếu có)</label>
+              <label class="block text-xs font-bold font-outfit text-zinc-200 mb-1">Ghi chú thêm (nếu có)</label>
               <input type="text" name="notes" placeholder="Cần tư vấn visa, phòng đơn, ăn chay..." 
-                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border border-zinc-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 transition">
+                     class="w-full px-4 py-3 rounded-2xl bg-zinc-800 border-2 border-zinc-700 text-white text-sm focus:outline-none focus:border-deeppink-500 transition">
             </div>
           </div>
 
           <button type="submit" 
-                  class="w-full py-4 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-black text-sm md:text-base shadow-xl hover:shadow-2xl transition flex items-center justify-center gap-2 cursor-pointer mt-4 pulse-pink-btn">
+                  class="w-full py-4 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-sm md:text-base shadow-xl transition flex items-center justify-center gap-2 cursor-pointer mt-4 pulse-deep-pink-btn">
             <i data-lucide="send" class="w-5 h-5"></i>
-            <span>Gửi Yêu Cầu & Kết Nối Zalo Hạnh vivu Ngay</span>
+            <span>Gửi Yêu Cầu & Kết Nối Zalo Hạnh vivu Ngay 💖</span>
           </button>
         </form>
 
@@ -1065,35 +1081,35 @@
     </div>
   </section>
 
-  <!-- ================= FOOTER (SLEEK BLACK & ROSE) ================= -->
-  <footer class="bg-zinc-950 text-zinc-400 py-12 border-t border-zinc-800 text-xs">
+  <!-- ================= FOOTER (JET BLACK & DEEP PINK) ================= -->
+  <footer class="bg-black text-zinc-400 py-12 border-t-2 border-deeppink-500 text-xs">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       
       <!-- Col 1 -->
       <div class="space-y-3">
         <div class="flex items-center gap-2.5">
-          <div class="w-8 h-8 rounded-full overflow-hidden border border-rose-400">
+          <div class="w-9 h-9 rounded-full overflow-hidden border-2 border-deeppink-500">
             <img src="images/hanh-vivu-avatar.jpg" alt="Hạnh vivu" class="w-full h-full object-cover">
           </div>
-          <span class="text-white font-black text-lg">Hạnh vivu</span>
+          <span class="text-white font-black font-outfit text-lg">Hạnh vivu</span>
         </div>
-        <p class="text-zinc-400 text-xs leading-relaxed">
+        <p class="text-zinc-400 text-xs leading-relaxed font-medium">
           Đơn vị chuyên sâu tour du lịch Trung Quốc chất lượng cao, tuyến No-Shop chuẩn chỉ, đưa bạn khám phá trọn vẹn cảnh sắc và văn hóa Trung Hoa theo cách chill nhất.
         </p>
       </div>
 
       <!-- Col 2: Hotline -->
       <div class="space-y-2">
-        <h4 class="text-white font-bold text-sm">Liên Hệ Trực Tiếp</h4>
-        <p><strong>Hotline / Zalo:</strong> <a href="https://zalo.me/0911328128" target="_blank" class="text-rose-400 font-bold hover:underline">0911.328.128</a></p>
-        <p><strong>Fanpage Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61557176072493" target="_blank" class="text-rose-300 hover:underline">Hạnh vivu (Facebook)</a></p>
+        <h4 class="text-white font-black font-outfit text-sm">Liên Hệ Trực Tiếp</h4>
+        <p><strong>Hotline / Zalo:</strong> <a href="https://zalo.me/0911328128" target="_blank" class="text-deeppink-400 font-black font-outfit hover:underline">0911.328.128</a></p>
+        <p><strong>Fanpage Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61557176072493" target="_blank" class="text-deeppink-400 font-bold hover:underline">Hạnh vivu (Facebook)</a></p>
         <p><strong>Tư vấn:</strong> 08:00 – 22:00 hàng ngày</p>
       </div>
 
       <!-- Col 3: Tuyến Hot -->
       <div class="space-y-2">
-        <h4 class="text-white font-bold text-sm">Tuyến Tour Tiêu Biểu</h4>
-        <ul class="space-y-1">
+        <h4 class="text-white font-black font-outfit text-sm">Tuyến Tour Tiêu Biểu</h4>
+        <ul class="space-y-1 font-medium">
           <li>Cửu Trại Câu – Thành Đô – Trùng Khánh</li>
           <li>Thượng Hải – Ô Trấn – Hàng Châu</li>
           <li>Bắc Kinh – Vạn Lý Trường Thành</li>
@@ -1104,8 +1120,8 @@
 
       <!-- Col 4: Cam kết -->
       <div class="space-y-2">
-        <h4 class="text-white font-bold text-sm">Cam Kết Dịch Vụ</h4>
-        <ul class="space-y-1">
+        <h4 class="text-white font-black font-outfit text-sm">Cam Kết Dịch Vụ</h4>
+        <ul class="space-y-1 font-medium">
           <li>✓ 100% Khách sạn đúng chuẩn cam kết</li>
           <li>✓ Tuyệt đối không ép mua sắm ở điểm shop</li>
           <li>✓ Tỷ lệ đậu visa đạt 99.8%</li>
@@ -1115,38 +1131,38 @@
 
     </div>
 
-    <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-zinc-800 text-center text-zinc-500">
-      <p>© 2026 Hạnh vivu. Toàn bộ hình ảnh và nội dung được tối ưu cho phong cách du lịch vừa chill vừa tươi sáng.</p>
+    <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-zinc-900 text-center text-zinc-500 font-medium">
+      <p>© 2026 Hạnh vivu. Toàn bộ hình ảnh và nội dung được tối ưu cho phong cách du lịch vừa chill vừa tươi sáng với tone Hồng Đậm & Đen.</p>
     </div>
   </footer>
 
   <!-- ================= FLOATING BOTTOM MOBILE BAR ================= -->
-  <div class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-rose-100 py-2 px-3 sm:hidden shadow-2xl">
-    <div class="grid grid-cols-4 gap-1.5 text-center">
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t-2 border-deeppink-300 py-2 px-3 sm:hidden shadow-2xl">
+    <div class="grid grid-cols-4 gap-1.5 text-center font-outfit">
       <!-- Call -->
       <a href="tel:0911328128" 
-         class="flex flex-col items-center justify-center py-1.5 rounded-2xl bg-zinc-100 text-zinc-800 font-bold text-[10px]">
+         class="flex flex-col items-center justify-center py-1.5 rounded-2xl bg-zinc-100 text-zinc-900 font-black text-[10px]">
         <i data-lucide="phone" class="w-4 h-4 text-zinc-900 mb-0.5"></i>
         <span>Gọi Điện</span>
       </a>
 
       <!-- Zalo -->
       <a href="https://zalo.me/0911328128" target="_blank" 
-         class="flex flex-col items-center justify-center py-1.5 rounded-2xl bg-rose-50 text-rose-700 font-bold text-[10px]">
-        <i data-lucide="message-circle" class="w-4 h-4 text-rose-600 mb-0.5"></i>
+         class="flex flex-col items-center justify-center py-1.5 rounded-2xl bg-deeppink-50 text-deeppink-600 font-black text-[10px] border border-deeppink-300">
+        <i data-lucide="message-circle" class="w-4 h-4 text-deeppink-600 mb-0.5"></i>
         <span>Chat Zalo</span>
       </a>
 
       <!-- Facebook -->
       <a href="https://www.facebook.com/profile.php?id=61557176072493" target="_blank" 
-         class="flex flex-col items-center justify-center py-1.5 rounded-2xl bg-zinc-100 text-zinc-800 font-bold text-[10px]">
+         class="flex flex-col items-center justify-center py-1.5 rounded-2xl bg-zinc-100 text-zinc-900 font-black text-[10px]">
         <i data-lucide="facebook" class="w-4 h-4 text-zinc-900 mb-0.5"></i>
         <span>Facebook</span>
       </a>
 
       <!-- Register -->
       <a href="#bookingSection" 
-         class="flex flex-col items-center justify-center py-1.5 rounded-2xl bg-rose-500 text-white font-extrabold text-[10px] shadow">
+         class="flex flex-col items-center justify-center py-1.5 rounded-2xl bg-deeppink-500 text-white font-black text-[10px] shadow-md">
         <i data-lucide="sparkles" class="w-4 h-4 text-white mb-0.5"></i>
         <span>Đặt Tour</span>
       </a>
@@ -1154,44 +1170,44 @@
   </div>
 
   <!-- ================= MODAL: TOUR ITINERARY DETAILS ================= -->
-  <div id="itineraryModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-zinc-950/75 backdrop-blur-sm p-4">
-    <div class="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 shadow-2xl relative border border-rose-100">
+  <div id="itineraryModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 shadow-2xl relative border-2 border-deeppink-500">
       
-      <button type="button" class="close-modal-btn absolute top-4 right-4 w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-600 flex items-center justify-center transition">
+      <button type="button" class="close-modal-btn absolute top-4 right-4 w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-700 flex items-center justify-center transition">
         <i data-lucide="x" class="w-4 h-4"></i>
       </button>
 
       <div class="space-y-4">
         <div>
-          <span id="modalTourBadge" class="inline-block px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-[11px] font-black uppercase mb-1">
+          <span id="modalTourBadge" class="inline-block px-3 py-1 rounded-full bg-deeppink-100 text-deeppink-600 text-[11px] font-black font-outfit uppercase mb-1">
             Tuyến No Shop
           </span>
-          <h3 id="modalTourTitle" class="text-lg font-black text-zinc-950 leading-snug">
+          <h3 id="modalTourTitle" class="text-lg font-black font-outfit text-zinc-950 leading-snug">
             Tên Tuyến Tour
           </h3>
           <div class="flex items-center gap-2 mt-1">
-            <span id="modalTourOldPrice" class="text-xs text-zinc-400 line-through">0đ</span>
-            <span id="modalTourPrice" class="text-xl font-black text-rose-600">0đ</span>
+            <span id="modalTourOldPrice" class="text-xs text-zinc-400 line-through font-bold">0đ</span>
+            <span id="modalTourPrice" class="text-xl font-black font-outfit text-deeppink-600">0đ</span>
           </div>
         </div>
 
-        <div class="space-y-2 pt-2 border-t border-rose-100">
-          <h4 class="text-xs font-black text-zinc-950 uppercase tracking-wider text-rose-600">Điểm Nhấn Hành Trình:</h4>
+        <div class="space-y-2 pt-2 border-t-2 border-deeppink-100">
+          <h4 class="text-xs font-black font-outfit uppercase tracking-wider text-deeppink-600">Điểm Nhấn Hành Trình:</h4>
           <ul id="modalTourHighlights" class="space-y-2">
             <!-- Dynamic items -->
           </ul>
         </div>
 
-        <div class="space-y-1 pt-2 border-t border-rose-100 text-xs">
-          <h4 class="font-bold text-zinc-950">Dịch Vụ Bao Gồm:</h4>
-          <p id="modalTourIncludes" class="text-zinc-600 leading-relaxed">
+        <div class="space-y-1 pt-2 border-t-2 border-deeppink-100 text-xs">
+          <h4 class="font-black font-outfit text-zinc-950">Dịch Vụ Bao Gồm:</h4>
+          <p id="modalTourIncludes" class="text-zinc-600 leading-relaxed font-medium">
             Vé máy bay, khách sạn, visa đoàn, các bữa ăn...
           </p>
         </div>
 
         <div class="pt-3 flex gap-2">
-          <button type="button" id="modalBookBtn" class="open-booking-btn w-full py-3.5 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-extrabold text-xs shadow-md transition text-center cursor-pointer">
-            Nhận Tư Vấn & Giữ Chỗ Tour Này 🌸
+          <button type="button" id="modalBookBtn" class="open-booking-btn w-full py-3.5 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-xs shadow-md transition text-center cursor-pointer">
+            Nhận Tư Vấn & Giữ Chỗ Tour Này 💖
           </button>
         </div>
       </div>
@@ -1200,54 +1216,54 @@
   </div>
 
   <!-- ================= MODAL: QUICK BOOKING MODAL ================= -->
-  <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-zinc-950/75 backdrop-blur-sm p-4">
-    <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative border border-rose-100">
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative border-2 border-deeppink-500">
       
-      <button type="button" class="close-modal-btn absolute top-4 right-4 w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-600 flex items-center justify-center transition">
+      <button type="button" class="close-modal-btn absolute top-4 right-4 w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-700 flex items-center justify-center transition">
         <i data-lucide="x" class="w-4 h-4"></i>
       </button>
 
       <div class="space-y-4">
         <div>
-          <span class="inline-block px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-[11px] font-black uppercase mb-1">
+          <span class="inline-block px-3 py-1 rounded-full bg-deeppink-100 text-deeppink-600 text-[11px] font-black font-outfit uppercase mb-1">
             Ưu Đãi Trực Tiếp
           </span>
-          <h3 class="text-lg font-black text-zinc-950">Nhận Tư Vấn Nhanh 1-1</h3>
-          <p class="text-xs text-zinc-500">Cô Hạnh vivu sẽ liên hệ qua Zalo gửi lịch trình PDF chi tiết cho bạn.</p>
+          <h3 class="text-lg font-black font-outfit text-zinc-950">Nhận Tư Vấn Nhanh 1-1</h3>
+          <p class="text-xs text-zinc-500 font-medium">Cô Hạnh vivu sẽ liên hệ qua Zalo gửi lịch trình PDF chi tiết cho bạn.</p>
         </div>
 
         <form class="tour-booking-form space-y-3">
           <input type="hidden" name="tour" id="formTourName" value="Tư vấn tour Trung Quốc">
 
           <div>
-            <label class="block text-xs font-bold text-zinc-700 mb-1">Họ tên của bạn *</label>
+            <label class="block text-xs font-bold font-outfit text-zinc-700 mb-1">Họ tên của bạn *</label>
             <input type="text" name="name" required placeholder="Họ và tên" 
-                   class="w-full px-4 py-2.5 rounded-2xl border border-zinc-300 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500">
+                   class="w-full px-4 py-2.5 rounded-2xl border-2 border-zinc-300 text-sm focus:outline-none focus:border-deeppink-500">
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-zinc-700 mb-1">Số điện thoại (Zalo) *</label>
+            <label class="block text-xs font-bold font-outfit text-zinc-700 mb-1">Số điện thoại (Zalo) *</label>
             <input type="tel" name="phone" required placeholder="Số điện thoại Zalo" 
-                   class="w-full px-4 py-2.5 rounded-2xl border border-zinc-300 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500">
+                   class="w-full px-4 py-2.5 rounded-2xl border-2 border-zinc-300 text-sm focus:outline-none focus:border-deeppink-500">
           </div>
 
           <div class="grid grid-cols-2 gap-2">
             <div>
-              <label class="block text-xs font-bold text-zinc-700 mb-1">Dự kiến đi</label>
+              <label class="block text-xs font-bold font-outfit text-zinc-700 mb-1">Dự kiến đi</label>
               <input type="text" name="date" placeholder="Tháng 11, 12..." 
-                     class="w-full px-4 py-2.5 rounded-2xl border border-zinc-300 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500">
+                     class="w-full px-4 py-2.5 rounded-2xl border-2 border-zinc-300 text-sm focus:outline-none focus:border-deeppink-500">
             </div>
             <div>
-              <label class="block text-xs font-bold text-zinc-700 mb-1">Số lượng khách</label>
+              <label class="block text-xs font-bold font-outfit text-zinc-700 mb-1">Số lượng khách</label>
               <input type="text" name="guests" placeholder="Ví dụ: 2 người" 
-                     class="w-full px-4 py-2.5 rounded-2xl border border-zinc-300 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500">
+                     class="w-full px-4 py-2.5 rounded-2xl border-2 border-zinc-300 text-sm focus:outline-none focus:border-deeppink-500">
             </div>
           </div>
 
           <button type="submit" 
-                  class="w-full py-3.5 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-2 cursor-pointer mt-2">
+                  class="w-full py-3.5 rounded-full bg-deeppink-500 hover:bg-deeppink-600 text-white font-black font-outfit text-xs shadow-md transition flex items-center justify-center gap-2 cursor-pointer mt-2">
             <i data-lucide="send" class="w-4 h-4"></i>
-            <span>Kết Nối Zalo Hạnh vivu Ngay</span>
+            <span>Kết Nối Zalo Hạnh vivu Ngay 💖</span>
           </button>
         </form>
       </div>
@@ -1256,25 +1272,25 @@
   </div>
 
   <!-- ================= MODAL: SUCCESS CONFIRMATION ================= -->
-  <div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-zinc-950/80 backdrop-blur-sm p-4">
-    <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center shadow-2xl relative border border-rose-100">
+  <div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-sm p-4">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center shadow-2xl relative border-2 border-deeppink-500">
       
-      <div class="w-16 h-16 rounded-full bg-rose-100 text-rose-600 mx-auto flex items-center justify-center mb-4">
+      <div class="w-16 h-16 rounded-full bg-deeppink-100 text-deeppink-600 mx-auto flex items-center justify-center mb-4">
         <i data-lucide="check-circle" class="w-10 h-10"></i>
       </div>
 
-      <h3 class="text-xl font-black text-zinc-950 mb-1">Gửi Yêu Cầu Thành Công!</h3>
-      <p class="text-xs text-zinc-600 leading-relaxed mb-4">
+      <h3 class="text-xl font-black font-outfit text-zinc-950 mb-1">Gửi Yêu Cầu Thành Công!</h3>
+      <p class="text-xs text-zinc-600 leading-relaxed mb-4 font-medium">
         Cảm ơn <strong id="successLeadName">bạn</strong>! Hệ thống đang tự động mở Zalo để kết nối trực tiếp với cô <strong>Hạnh vivu (0911.328.128)</strong> nhận báo giá ưu đãi.
       </p>
 
       <div class="space-y-2">
         <a id="successZaloLink" href="https://zalo.me/0911328128" target="_blank"
-           class="w-full py-3 rounded-full font-bold text-xs text-white bg-rose-500 hover:bg-rose-600 shadow-md flex items-center justify-center gap-1.5 transition">
+           class="w-full py-3 rounded-full font-black font-outfit text-xs text-white bg-deeppink-500 hover:bg-deeppink-600 shadow-md flex items-center justify-center gap-1.5 transition">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
           <span>Mở Zalo Cô Hạnh Ngay</span>
         </a>
-        <button type="button" class="close-modal-btn w-full py-2.5 rounded-full text-xs font-bold text-zinc-600 bg-zinc-100 hover:bg-zinc-200 transition">
+        <button type="button" class="close-modal-btn w-full py-2.5 rounded-full text-xs font-bold font-outfit text-zinc-700 bg-zinc-100 hover:bg-zinc-200 transition">
           Đóng cửa sổ
         </button>
       </div>
