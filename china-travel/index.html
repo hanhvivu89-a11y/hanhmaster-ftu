@@ -9,8 +9,8 @@
   <!-- Open Graph / Facebook Share -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hạnh vivu - Khám Phá Trung Hoa Diễm Lệ">
-  <meta property="og:description" content="Tour du lịch Trung Quốc trọn gói cao cấp, tuyến No-Shop không ép mua sắm, khách sạn 4-5 sao, hỗ trợ visa và Alipay trọn gói. Nhận lịch trình chi tiết ngay!">
-  <meta property="og:image" content="images/hanh-vivu.jpg">
+  <meta property="og:description" content="Tour du lịch Trung Quốc trọn gói cao cấp, tuyến No-Shop không ép mua sắm, khách sạn 4-5 sao, hình ảnh thực tế 100% cùng Hạnh vivu.">
+  <meta property="og:image" content="images/hanh-vivu-avatar.jpg">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -59,24 +59,27 @@
   <div class="bg-oriental-950 text-amber-300 text-xs py-2 px-4 text-center font-medium border-b border-oriental-800/60">
     <div class="max-w-6xl mx-auto flex items-center justify-center gap-2">
       <span class="inline-block animate-bounce">🏮</span>
-      <span><strong>Ưu Đãi Mùa Lễ Hội 2026:</strong> Tặng voucher <strong>500.000đ/khách</strong> khi đăng ký tour Trung Quốc theo nhóm từ 2 người!</span>
+      <span><strong>Ưu Đãi Mùa Lễ Hội & Mùa Tuyết 2026:</strong> Tặng voucher <strong>500.000đ/khách</strong> khi đăng ký tour Trung Quốc theo nhóm từ 2 người!</span>
       <a href="#bookingSection" class="underline hover:text-amber-200 ml-1 font-bold">Nhận ngay →</a>
     </div>
   </div>
 
   <!-- ================= HEADER NAVIGATION ================= -->
   <header class="sticky top-0 z-40 glass-nav border-b border-oriental-100/80 shadow-sm transition-all duration-300">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-between">
       
-      <!-- Logo Brand -->
-      <a href="#" class="flex items-center gap-2.5 group">
-        <div class="w-10 h-10 rounded-full bg-oriental-700 text-amber-300 flex items-center justify-center font-black text-xl shadow-md border-2 border-amber-400/50 group-hover:scale-105 transition">
-          H
+      <!-- Logo Brand with Real Avatar -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="relative">
+          <div class="w-11 h-11 rounded-full overflow-hidden border-2 border-amber-400 shadow-md group-hover:scale-105 transition">
+            <img src="images/hanh-vivu-avatar.jpg" alt="Hạnh vivu Avatar" class="w-full h-full object-cover">
+          </div>
+          <span class="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>
         </div>
         <div>
-          <div class="text-lg md:text-xl font-extrabold tracking-tight text-oriental-800 flex items-center gap-1">
+          <div class="text-lg md:text-xl font-extrabold tracking-tight text-oriental-800 flex items-center gap-1.5">
             <span>Hạnh vivu</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-300 font-bold hidden sm:inline-block">China Travel</span>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300 font-extrabold hidden sm:inline-block">China Travel</span>
           </div>
           <p class="text-[10px] text-slate-500 font-medium">Chuyên Gia Du Lịch Trung Quốc • Tour No-Shop</p>
         </div>
@@ -86,15 +89,15 @@
       <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
         <a href="#toursSection" class="hover:text-oriental-700 transition">Tuyến Tour Hot</a>
         <a href="#aboutSection" class="hover:text-oriental-700 transition">Về Hạnh vivu</a>
-        <a href="#servicesSection" class="hover:text-oriental-700 transition">Visa & Dịch Vụ</a>
+        <a href="#gallerySection" class="hover:text-oriental-700 transition">Khoảnh Khắc Thực Tế</a>
+        <a href="#servicesSection" class="hover:text-oriental-700 transition">Visa & eSIM</a>
         <a href="#guideSection" class="hover:text-oriental-700 transition">Cẩm Nang A-Z</a>
-        <a href="#reviewsSection" class="hover:text-oriental-700 transition">Đánh Giá</a>
       </nav>
 
       <!-- CTA Buttons Desktop -->
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://www.facebook.com/profile.php?id=61557176072493" target="_blank" rel="noopener noreferrer" 
-           class="p-2 rounded-xl text-blue-600 bg-blue-50 hover:bg-blue-100 transition" title="Fanpage Facebook">
+           class="p-2 rounded-xl text-blue-600 bg-blue-50 hover:bg-blue-100 transition" title="Fanpage Facebook Hạnh vivu">
           <i data-lucide="facebook" class="w-5 h-5"></i>
         </a>
         <a href="https://zalo.me/0911328128" target="_blank" rel="noopener noreferrer"
@@ -114,9 +117,9 @@
     <div id="mobileMenu" class="hidden md:hidden bg-[#fdfbf7] border-b border-oriental-100 px-4 py-4 space-y-3 animate-fadeIn">
       <a href="#toursSection" class="block py-2 text-sm font-bold text-slate-700 hover:text-oriental-700 border-b border-slate-100">🔥 Tuyến Tour Nổi Bật</a>
       <a href="#aboutSection" class="block py-2 text-sm font-bold text-slate-700 hover:text-oriental-700 border-b border-slate-100">✨ Về Hạnh vivu</a>
+      <a href="#gallerySection" class="block py-2 text-sm font-bold text-slate-700 hover:text-oriental-700 border-b border-slate-100">📸 Hình Ảnh Thực Tế</a>
       <a href="#servicesSection" class="block py-2 text-sm font-bold text-slate-700 hover:text-oriental-700 border-b border-slate-100">🛡️ Dịch Vụ Visa & eSIM</a>
       <a href="#guideSection" class="block py-2 text-sm font-bold text-slate-700 hover:text-oriental-700 border-b border-slate-100">💡 Cẩm Nang Alipay & Tự Túc</a>
-      <a href="#reviewsSection" class="block py-2 text-sm font-bold text-slate-700 hover:text-oriental-700 border-b border-slate-100">⭐ Cảm Nhận Khách Hàng</a>
       <div class="pt-2 flex items-center gap-2">
         <a href="https://zalo.me/0911328128" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-oriental-700 text-white font-bold text-sm shadow">
           Chat Zalo Tư Vấn Ngay
@@ -125,20 +128,19 @@
     </div>
   </header>
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="relative bg-oriental-gradient text-white overflow-hidden py-16 md:py-24">
-    <!-- Atmospheric Ambient Overlays -->
-    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px]"></div>
+  <!-- ================= HERO SECTION WITH REAL PHOTO SHOWCASE ================= -->
+  <section class="relative bg-oriental-gradient text-white overflow-hidden py-14 md:py-20">
+    <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px]"></div>
     <div class="absolute -right-24 -bottom-24 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -left-24 top-0 w-96 h-96 bg-red-600/30 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="relative max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       
-      <!-- Hero Left: Content & Slogan -->
+      <!-- Hero Left -->
       <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-300 text-xs font-bold uppercase tracking-wider">
           <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
-          <span>Hành Trình Đáng Đi • Trải Nghiệm Đáng Tiền</span>
+          <span>Hình Ảnh Thực Tế 100% • Tour No-Shop Cao Cấp</span>
         </div>
 
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
@@ -148,10 +150,10 @@
         </h1>
 
         <p class="text-sm md:text-base text-slate-200 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-          Tận hưởng vẻ đẹp tiên cảnh của <strong>Cửu Trại Câu</strong>, sự lộng lẫy của <strong>Cố Cung Bắc Kinh</strong>, nét thơ mộng <strong>Ô Trấn Giang Nam</strong> hay tuyết trắng <strong>Cáp Nhĩ Tân</strong>. Lịch trình chất lượng cao <strong>No Shop</strong>, khách sạn 4-5 sao, dịch vụ tận tâm từ trái tim!
+          Tận hưởng vẻ đẹp tiên cảnh của <strong>Cửu Trại Câu</strong>, sự tráng lệ của <strong>Cố Cung Bắc Kinh</strong>, nét thơ mộng <strong>Ô Trấn Giang Nam</strong> hay mùa đông tuyết trắng <strong>Cáp Nhĩ Tân</strong>. Lịch trình nghỉ dưỡng cao cấp <strong>No Shop</strong>, khách sạn 4-5 sao và đồng hành tận tâm từ Hạnh vivu!
         </p>
 
-        <!-- CTA Action Buttons -->
+        <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
           <a href="#toursSection" 
              class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-gold-gradient text-slate-950 font-extrabold text-sm shadow-xl hover:opacity-95 transition flex items-center justify-center gap-2 pulse-cta">
@@ -177,7 +179,7 @@
           </div>
           <div class="space-y-0.5">
             <div class="text-2xl font-black text-amber-300">100%</div>
-            <div class="text-[11px] text-slate-300 font-medium">KS 4-5* tiêu chuẩn</div>
+            <div class="text-[11px] text-slate-300 font-medium">KS 4-5* chuẩn chỉ</div>
           </div>
           <div class="space-y-0.5">
             <div class="text-2xl font-black text-amber-300">24/7</div>
@@ -186,30 +188,30 @@
         </div>
       </div>
 
-      <!-- Hero Right: Visual Destination Highlight Card -->
+      <!-- Hero Right: Real Hạnh vivu Travel Photo Showcase -->
       <div class="lg:col-span-5 relative">
-        <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-400/30 lantern-glow">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" 
-               alt="Cửu Trại Câu Trung Quốc" 
-               class="w-full h-[400px] object-cover hover:scale-105 transition duration-700">
+        <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-400/40 lantern-glow">
+          <img src="images/hanh-vivu-hero.jpg" 
+               alt="Hạnh vivu thực tế tại núi tuyết và rừng thu Trung Quốc" 
+               class="w-full h-[460px] object-cover hover:scale-105 transition duration-700">
           
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
           
           <div class="absolute top-4 left-4">
-            <span class="px-3 py-1 rounded-full badge-noshop text-[11px] font-bold shadow">
-              ✓ Tuyến No Shop Đặc Quyền
+            <span class="px-3 py-1 rounded-full bg-oriental-700/90 text-amber-300 border border-amber-400/60 text-[11px] font-extrabold shadow">
+              ★ Trải Nghiệm Thực Tế Hạnh vivu
             </span>
           </div>
 
           <div class="absolute bottom-4 left-4 right-4 text-white">
-            <div class="flex items-center gap-1 text-amber-300 text-xs font-semibold mb-1">
+            <div class="flex items-center gap-1.5 text-amber-300 text-xs font-bold mb-1">
               <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
-              <span>Cửu Trại Câu – Thành Đô – Trùng Khánh</span>
+              <span>Mùa Thu Vàng & Núi Tuyết Hùng Vĩ</span>
             </div>
-            <h3 class="text-lg font-bold leading-snug">Thiên đường hạ giới 6N5Đ bay thẳng</h3>
+            <h3 class="text-lg font-bold leading-snug">"Tự mình trải nghiệm để mang đến hành trình đẹp nhất cho bạn!"</h3>
             <div class="mt-2 flex items-center justify-between pt-2 border-t border-white/20">
-              <span class="text-xs text-slate-300">Trọn gói chỉ từ:</span>
-              <span class="text-lg font-black text-amber-300">15.990.000đ</span>
+              <span class="text-xs text-slate-300">Tour Cửu Trại Câu – Tứ Xuyên</span>
+              <span class="text-xs font-bold text-amber-300">No Shop • Bay Thẳng</span>
             </div>
           </div>
         </div>
@@ -218,87 +220,153 @@
     </div>
   </section>
 
-  <!-- ================= ABOUT HANH VIVU ================= -->
+  <!-- ================= VỀ HẠNH VIVU SECTION ================= -->
   <section id="aboutSection" class="py-16 bg-white border-b border-oriental-100">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
       
-      <!-- Avatar & Portrait -->
-      <div class="md:col-span-5 flex justify-center">
+      <!-- Real Avatar & Lifestyle Images -->
+      <div class="md:col-span-5 flex flex-col items-center">
         <div class="relative">
-          <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-amber-400 shadow-xl relative z-10">
-            <img src="images/hanh-vivu.jpg" 
-                 alt="Hạnh vivu - Chuyên gia du lịch Trung Quốc" 
-                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+          <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-4 border-amber-400 shadow-2xl relative z-10">
+            <img src="images/hanh-vivu-avatar.jpg" 
+                 alt="Chân dung Hạnh vivu du lịch Trung Quốc" 
+                 class="w-full h-full object-cover object-center hover:scale-105 transition duration-500">
           </div>
-          <!-- Decorative golden halo -->
-          <div class="absolute inset-0 rounded-full bg-amber-400/20 blur-xl transform scale-110 -z-0"></div>
+          <!-- Decorative halo -->
+          <div class="absolute inset-0 rounded-3xl bg-amber-400/25 blur-xl transform scale-105 -z-0"></div>
           <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 z-20 whitespace-nowrap">
-            <span class="px-4 py-1.5 rounded-full bg-oriental-800 text-amber-300 text-xs font-bold shadow-md border border-amber-400/60">
-              Founder • Hạnh vivu
+            <span class="px-5 py-2 rounded-full bg-oriental-800 text-amber-300 text-xs font-extrabold shadow-lg border border-amber-400/60 flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              <span>Founder • Hạnh vivu</span>
             </span>
           </div>
         </div>
+        <p class="text-xs text-slate-400 mt-5 font-medium italic text-center">Hình ảnh Hạnh vivu trong chuyến khám phá mùa thu Trung Quốc</p>
       </div>
 
       <!-- Story & USPs -->
       <div class="md:col-span-7 space-y-4 text-slate-800">
         <div class="inline-flex items-center gap-1.5 text-oriental-700 font-extrabold text-xs tracking-wider uppercase">
-          <i data-lucide="award" class="w-4 h-4"></i>
-          <span>Về Hạnh vivu & Triết Lý Du Lịch</span>
+          <i data-lucide="heart" class="w-4 h-4 fill-oriental-700"></i>
+          <span>Về Hạnh vivu & Tình Yêu Với Đất Nước Trung Hoa</span>
         </div>
 
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
-          "Không chỉ là một chuyến đi, đó là những ký ức rực rỡ để nhớ cả một đời."
+          "Không chỉ là bán tour, Hạnh muốn cùng bạn gom lại những khoảnh khắc đẹp nhất của thanh xuân."
         </h2>
 
         <p class="text-slate-600 text-sm leading-relaxed">
-          Chào bạn, mình là <strong>Hạnh vivu</strong>! Với niềm đam mê sâu sắc dành cho phong cảnh hùng vĩ, bề dày lịch sử và văn hóa ẩm thực Trung Hoa, Hạnh xây dựng từng tuyến tour với tâm thế của một người bạn đồng hành tin cậy. 
+          Chào bạn, mình là <strong>Hạnh vivu</strong>! Từng đặt chân qua những con ngõ cổ kính của Ô Trấn, ngước nhìn sự kỳ vĩ của Tử Cấm Thành, và hít hà không khí se lạnh dưới chân núi tuyết mùa thu vàng, Hạnh hiểu rằng một chuyến du lịch đúng nghĩa phải là sự <strong>thư thái, trọn vẹn và tự do</strong>.
         </p>
 
         <p class="text-slate-600 text-sm leading-relaxed">
-          Khác biệt lớn nhất tại Hạnh vivu là chúng mình <strong>ưu tiên tối đa thời gian trải nghiệm, ngắm cảnh, chụp ảnh</strong> và nói KHÔNG với việc ép mua sắm ở những điểm shop mệt mỏi.
+          Đó là lý do tất cả các tuyến tour tại Hạnh vivu đều được thiết kế theo tiêu chí <strong>NO SHOP (Không ép mua sắm)</strong>, chọn lọc khách sạn 4-5 sao cao cấp, đường bay thẳng hoặc tàu cao tốc tiện nghi để bạn dành trọn từng phút giây ngắm cảnh và lưu giữ những khung hình sống ảo để đời.
         </p>
 
         <!-- 4 Core Commitments Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-          <div class="p-3.5 rounded-xl bg-oriental-50/80 border border-oriental-100 flex items-start gap-2.5">
-            <div class="p-2 rounded-lg bg-oriental-700 text-amber-300 shrink-0">
+          <div class="p-3.5 rounded-2xl bg-oriental-50/80 border border-oriental-100 flex items-start gap-2.5">
+            <div class="p-2 rounded-xl bg-oriental-700 text-amber-300 shrink-0">
               <i data-lucide="shield-check" class="w-4 h-4"></i>
             </div>
             <div>
-              <h4 class="text-xs font-bold text-slate-900">Tuyến Tour No-Shop</h4>
-              <p class="text-[11px] text-slate-500 mt-0.5">Tôn trọng thời gian của khách, trải nghiệm văn hóa trọn vẹn.</p>
+              <h4 class="text-xs font-bold text-slate-900">Tuyến Tour No-Shop Chuẩn</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Nói không với việc bắt khách vào các điểm bán hàng áp lực.</p>
             </div>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-amber-50/80 border border-amber-200 flex items-start gap-2.5">
-            <div class="p-2 rounded-lg bg-amber-500 text-slate-950 shrink-0">
+          <div class="p-3.5 rounded-2xl bg-amber-50/80 border border-amber-200 flex items-start gap-2.5">
+            <div class="p-2 rounded-xl bg-amber-500 text-slate-950 shrink-0">
               <i data-lucide="hotel" class="w-4 h-4"></i>
             </div>
             <div>
-              <h4 class="text-xs font-bold text-slate-900">Khách Sạn 4-5 Sao</h4>
-              <p class="text-[11px] text-slate-500 mt-0.5">Phòng ốc tiện nghi, sạch đẹp, vị trí trung tâm thuận tiện.</p>
+              <h4 class="text-xs font-bold text-slate-900">Khách Sạn 4-5 Sao Nghỉ Dưỡng</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Phòng ốc rộng rãi, tiện nghi, ăn uống chuẩn vị bản địa.</p>
             </div>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-jade-500/10 border border-jade-500/20 flex items-start gap-2.5">
-            <div class="p-2 rounded-lg bg-jade-600 text-white shrink-0">
+          <div class="p-3.5 rounded-2xl bg-jade-500/10 border border-jade-500/20 flex items-start gap-2.5">
+            <div class="p-2 rounded-xl bg-jade-600 text-white shrink-0">
               <i data-lucide="file-check" class="w-4 h-4"></i>
             </div>
             <div>
-              <h4 class="text-xs font-bold text-slate-900">Visa Nhanh & Thủ Tục Dễ</h4>
-              <p class="text-[11px] text-slate-500 mt-0.5">Hỗ trợ visa đoàn, visa dán tỷ lệ đạt trên 99.8%.</p>
+              <h4 class="text-xs font-bold text-slate-900">Visa Đoàn Nhanh Gọn</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Chỉ cần chụp ảnh hộ chiếu, tỷ lệ đậu 99.8% an tâm tuyệt đối.</p>
             </div>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-blue-50 border border-blue-100 flex items-start gap-2.5">
-            <div class="p-2 rounded-lg bg-blue-600 text-white shrink-0">
+          <div class="p-3.5 rounded-2xl bg-blue-50 border border-blue-100 flex items-start gap-2.5">
+            <div class="p-2 rounded-xl bg-blue-600 text-white shrink-0">
               <i data-lucide="smartphone" class="w-4 h-4"></i>
             </div>
             <div>
-              <h4 class="text-xs font-bold text-slate-900">Hỗ Trợ Kỹ Thuật Số A-Z</h4>
-              <p class="text-[11px] text-slate-500 mt-0.5">Cài app Alipay, WeChat Pay, mua eSIM lướt mạng không chặn.</p>
+              <h4 class="text-xs font-bold text-slate-900">Cài App Alipay & eSIM 4G</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Quẹt mã thanh toán như dân bản địa, lướt Zalo/Facebook phà phà.</p>
             </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GALLERY: KHOẢNH KHẮC THỰC TẾ ================= -->
+  <section id="gallerySection" class="py-16 bg-[#fffdf9] border-b border-oriental-100">
+    <div class="max-w-6xl mx-auto px-4">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-2 mb-10">
+        <div class="inline-flex items-center gap-1.5 text-amber-600 font-extrabold text-xs uppercase tracking-wider">
+          <i data-lucide="camera" class="w-4 h-4 text-amber-500"></i>
+          <span>Check-in Thực Tế Cùng Hạnh vivu</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900">
+          Những Khoảnh Khắc <span class="text-oriental-700">Đẹp Như Tranh Vẽ</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500">
+          Hình ảnh thực tế từ các chuyến khảo sát và đồng hành cùng du khách của Hạnh vivu tại đất nước tỷ dân.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- Photo 1: Temple -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-md border-2 border-amber-300/40 h-80">
+          <img src="images/hanh-vivu-temple.jpg" alt="Hạnh vivu check-in chùa cổ và mùa thu vàng" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-white">
+            <span class="px-2 py-0.5 rounded bg-amber-500 text-slate-950 text-[10px] font-extrabold uppercase">Check-in</span>
+            <p class="text-xs font-bold mt-1">Mùa thu vàng rực rỡ bên mái chùa cổ kính</p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Hero arms open -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-md border-2 border-amber-300/40 h-80">
+          <img src="images/hanh-vivu-hero.jpg" alt="Hạnh vivu ôm trọn núi tuyết" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-white">
+            <span class="px-2 py-0.5 rounded bg-oriental-700 text-amber-300 text-[10px] font-extrabold uppercase">Thiên Nhiên</span>
+            <p class="text-xs font-bold mt-1">Núi tuyết hùng vĩ & rừng lá phong ngút ngàn</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Relax on bench -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-md border-2 border-amber-300/40 h-80">
+          <img src="images/hanh-vivu-relax.jpg" alt="Hạnh vivu thư thái ngắm cảnh núi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-white">
+            <span class="px-2 py-0.5 rounded bg-emerald-600 text-white text-[10px] font-extrabold uppercase">Thư Giãn</span>
+            <p class="text-xs font-bold mt-1">Cốc trà ấm giữa không gian trong lành</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Portrait close up -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-md border-2 border-amber-300/40 h-80">
+          <img src="images/hanh-vivu-avatar.jpg" alt="Nụ cười rạng rỡ của Hạnh vivu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-white">
+            <span class="px-2 py-0.5 rounded bg-blue-600 text-white text-[10px] font-extrabold uppercase">Đồng Hành</span>
+            <p class="text-xs font-bold mt-1">Luôn sẵn sàng tư vấn tận tâm cho chuyến đi của bạn</p>
           </div>
         </div>
 
@@ -315,13 +383,13 @@
       <div class="text-center max-w-2xl mx-auto space-y-2 mb-10">
         <div class="inline-flex items-center gap-1.5 text-oriental-700 font-extrabold text-xs uppercase tracking-wider">
           <i data-lucide="flame" class="w-4 h-4 text-amber-500"></i>
-          <span>Tuyển Tập Tour Trung Quốc Được Yêu Thích Nhất</span>
+          <span>Tuyển Tập Tour Tuyến Được Yêu Thích Nhất</span>
         </div>
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900">
           Những Tuyến Đường <span class="text-oriental-700">Đáng Trải Nghiệm Nhất 2026</span>
         </h2>
         <p class="text-xs sm:text-sm text-slate-500">
-          Lịch trình bay thẳng / tàu cao tốc được tuyển chọn kỹ lưỡng, giá cả minh bạch không phụ phí ẩn.
+          Lịch trình bay thẳng / tàu cao tốc được tuyển chọn kỹ lưỡng, giá cả minh bạch không phát sinh.
         </p>
       </div>
 
@@ -331,19 +399,19 @@
           Tất Cả Tuyến
         </button>
         <button type="button" data-filter="nature" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 whitespace-nowrap transition cursor-pointer">
-          🍁 Tiên Cảnh & Thiên Nhiên
+          🍁 Tiên Cảnh & Cửu Trại Câu
         </button>
         <button type="button" data-filter="ancient" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 whitespace-nowrap transition cursor-pointer">
-          🏮 Giang Nam & Cổ Trấn
+          🏮 Giang Nam & Ô Trấn
         </button>
         <button type="button" data-filter="heritage" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 whitespace-nowrap transition cursor-pointer">
-          🏯 Di Sản Cố Cung
+          🏯 Di Sản Cố Cung Bắc Kinh
         </button>
         <button type="button" data-filter="yunnan" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 whitespace-nowrap transition cursor-pointer">
-          🏔️ Vân Nam Huyền Thoại
+          🏔️ Lệ Giang – Shangri-La
         </button>
         <button type="button" data-filter="budget" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 whitespace-nowrap transition cursor-pointer">
-          🚆 Đường Bộ Tiết Kiệm
+          🚆 Nam Ninh Chi Dạ 3.480K
         </button>
         <button type="button" data-filter="winter" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 whitespace-nowrap transition cursor-pointer">
           ❄️ Cáp Nhĩ Tân Mùa Tuyết
@@ -357,8 +425,8 @@
         <div class="tour-card bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-md flex flex-col justify-between" data-category="nature">
           <div>
             <div class="relative h-56 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" 
-                   alt="Cửu Trại Câu" class="w-full h-full object-cover">
+              <img src="images/hanh-vivu-temple.jpg" 
+                   alt="Cửu Trại Câu Thành Đô Trùng Khánh thực tế" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
                 <span class="px-2.5 py-1 rounded-md badge-noshop text-[10px] font-extrabold uppercase shadow">✓ No Shop</span>
                 <span class="px-2.5 py-1 rounded-md bg-amber-500 text-slate-950 text-[10px] font-extrabold uppercase shadow">★ Khách sạn 5*</span>
@@ -382,15 +450,15 @@
               <ul class="text-xs text-slate-600 space-y-1.5 pt-1">
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Hồ ngũ sắc Cửu Trại Câu đẹp nao lòng người</span>
+                  <span>Hồ nước ngũ sắc Cửu Trại Câu đẹp tuyệt trần</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Phố Hồng Nhai Động Trùng Khánh ngàn ánh đèn</span>
+                  <span>Check-in phố Hồng Nhai Động Trùng Khánh ngàn đèn</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Thưởng thức lẩu Tứ Xuyên & xem Biến Mặt</span>
+                  <span>Thưởng thức Lẩu Tứ Xuyên & xem Biến Mặt Xuyên Kịch</span>
                 </li>
               </ul>
             </div>
@@ -420,8 +488,8 @@
         <div class="tour-card bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-md flex flex-col justify-between" data-category="ancient">
           <div>
             <div class="relative h-56 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=800&q=80" 
-                   alt="Ô Trấn Hàng Châu" class="w-full h-full object-cover">
+              <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=800&q=80" 
+                   alt="Ô Trấn Giang Nam sông nước" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
                 <span class="px-2.5 py-1 rounded-md badge-hot text-[10px] font-extrabold uppercase shadow">🔥 Giá Sốc 9.990K</span>
                 <span class="px-2.5 py-1 rounded-md bg-amber-500 text-slate-950 text-[10px] font-extrabold uppercase shadow">Đường Bay</span>
@@ -449,11 +517,11 @@
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Du ngoạn Tây Hồ Hàng Châu thanh tao diễm lệ</span>
+                  <span>Du thuyền Tây Hồ Hàng Châu thanh tao diễm lệ</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Bến Thượng Hải & Tháp Đông Phương Minh Châu</span>
+                  <span>Check-in Bến Thượng Hải & Tháp Đông Phương Minh Châu</span>
                 </li>
               </ul>
             </div>
@@ -483,10 +551,10 @@
         <div class="tour-card bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-md flex flex-col justify-between" data-category="heritage">
           <div>
             <div class="relative h-56 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80" 
-                   alt="Vạn Lý Trường Thành Bắc Kinh" class="w-full h-full object-cover">
+              <img src="https://images.unsplash.com/photo-1584646098378-0874589d76b1?auto=format&fit=crop&w=800&q=80" 
+                   alt="Tử Cấm Thành Cố Cung Bắc Kinh" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                <span class="px-2.5 py-1 rounded-md badge-luxury text-[10px] font-extrabold uppercase shadow">👑 Di Sản Triều Đại</span>
+                <span class="px-2.5 py-1 rounded-md badge-luxury text-[10px] font-extrabold uppercase shadow">👑 Di Sản Hoàng Gia</span>
                 <span class="px-2.5 py-1 rounded-md bg-amber-500 text-slate-950 text-[10px] font-extrabold uppercase shadow">Vịt Quay BK</span>
               </div>
               <div class="absolute bottom-2.5 right-3 px-2 py-0.5 rounded-md bg-black/60 backdrop-blur-sm text-white text-[11px] font-medium flex items-center gap-1">
@@ -498,7 +566,7 @@
             <div class="p-5 space-y-3">
               <div class="flex items-center gap-1.5 text-xs font-semibold text-oriental-700">
                 <i data-lucide="plane-takeoff" class="w-3.5 h-3.5"></i>
-                <span>Bay Thẳng Vietnam Airlines / Air China</span>
+                <span>Bay Thẳng • Khách Sạn 4-5 Sao</span>
               </div>
               
               <h3 class="text-base font-bold text-slate-900 leading-snug hover:text-oriental-700 transition">
@@ -508,15 +576,15 @@
               <ul class="text-xs text-slate-600 space-y-1.5 pt-1">
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Khám phá Tử Cấm Thành uy nghiêm thời Minh - Thanh</span>
+                  <span>Khám phá Cố Cung Tử Cấm Thành triều Minh - Thanh</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Chinh phục Vạn Lý Trường Thành hùng vĩ</span>
+                  <span>Chinh phục Vạn Lý Trường Thành vĩ đại</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Thưởng thức yến tiệc Vịt Quay Bắc Kinh trứ danh</span>
+                  <span>Yến tiệc Vịt Quay Bắc Kinh chuẩn vị cung đình</span>
                 </li>
               </ul>
             </div>
@@ -571,15 +639,15 @@
               <ul class="text-xs text-slate-600 space-y-1.5 pt-1">
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Chinh phục Núi Tuyết Ngọc Long quanh năm tuyết phủ</span>
+                  <span>Cáp treo chinh phục Núi Tuyết Ngọc Long ngút ngàn</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Thành cổ Lệ Giang & Tu viện Shangri-La linh thiêng</span>
+                  <span>Thành cổ Lệ Giang 800 năm & Tu viện Tùng Tán Lâm</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Xem show đại vũ kịch "Ấn Tượng Lệ Giang" đỉnh cao</span>
+                  <span>Show đại vũ kịch ngoài trời "Ấn Tượng Lệ Giang"</span>
                 </li>
               </ul>
             </div>
@@ -610,7 +678,7 @@
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" 
-                   alt="Nam Ninh Chi Dạ" class="w-full h-full object-cover">
+                   alt="Nam Ninh Chi Dạ đèn lồng phố đêm" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
                 <span class="px-2.5 py-1 rounded-md bg-amber-500 text-slate-950 text-[10px] font-extrabold uppercase shadow">⚡ Siêu Tiết Kiệm</span>
                 <span class="px-2.5 py-1 rounded-md bg-blue-600 text-white text-[10px] font-extrabold uppercase shadow">Đường Bộ Dễ Đi</span>
@@ -634,7 +702,7 @@
               <ul class="text-xs text-slate-600 space-y-1.5 pt-1">
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Đêm Nam Ninh Chi Dạ lung linh phố lên đèn</span>
+                  <span>Đêm Nam Ninh Chi Dạ rực rỡ phố ẩm thực không ngủ</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
@@ -642,7 +710,7 @@
                 </li>
                 <li class="flex items-center gap-2">
                   <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                  <span>Thủ tục visa đoàn cực nhanh, chỉ cần ảnh hộ chiếu</span>
+                  <span>Thủ tục visa đoàn cực nhanh, chỉ cần chụp ảnh hộ chiếu</span>
                 </li>
               </ul>
             </div>
@@ -672,8 +740,8 @@
         <div class="tour-card bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-md flex flex-col justify-between" data-category="winter">
           <div>
             <div class="relative h-56 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" 
-                   alt="Cáp Nhĩ Tân Làng Tuyết" class="w-full h-full object-cover">
+              <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=800&q=80" 
+                   alt="Cáp Nhĩ Tân Lâu đài Băng Tuyết lộng lẫy" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
                 <span class="px-2.5 py-1 rounded-md bg-cyan-700 text-white text-[10px] font-extrabold uppercase shadow">❄️ Thế Giới Băng Đăng</span>
                 <span class="px-2.5 py-1 rounded-md bg-amber-500 text-slate-950 text-[10px] font-extrabold uppercase shadow">Mùa Đông Độc Bản</span>
@@ -888,102 +956,6 @@
     </div>
   </section>
 
-  <!-- ================= TESTIMONIALS / FEEDBACK ================= -->
-  <section id="reviewsSection" class="py-16 bg-white border-y border-oriental-100">
-    <div class="max-w-6xl mx-auto px-4">
-      
-      <div class="text-center max-w-2xl mx-auto space-y-2 mb-12">
-        <div class="inline-flex items-center gap-1.5 text-amber-600 font-extrabold text-xs uppercase tracking-wider">
-          <i data-lucide="heart" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
-          <span>Cảm Nhận Từ Những Chuyến Đi</span>
-        </div>
-        <h2 class="text-2xl sm:text-3xl font-black text-slate-900">
-          Khách Hàng Nói Gì Về <span class="text-oriental-700">Hạnh vivu?</span>
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- Review 1 -->
-        <div class="p-6 rounded-3xl bg-[#fdfbf7] border border-slate-200 space-y-4 shadow-sm flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center gap-1 text-amber-400">
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            </div>
-            <p class="text-xs text-slate-600 italic leading-relaxed">
-              "Gia đình mình vừa đi tour Cửu Trại Câu - Trùng Khánh 6N5Đ về. Cảnh sắc đẹp ngỡ ngàng như chốn thần tiên! Điểm cộng lớn nhất là tour không bị bắt mua sắm như các đoàn khác, ăn uống chuẩn khách sạn 5 sao cực kỳ ngon miệng."
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-3 border-t border-slate-200/60">
-            <div class="w-9 h-9 rounded-full bg-oriental-100 text-oriental-800 font-bold flex items-center justify-center text-xs">
-              MC
-            </div>
-            <div>
-              <div class="text-xs font-bold text-slate-900">Chị Mai Chi</div>
-              <div class="text-[10px] text-slate-400">Đoàn Cửu Trại Câu tháng 9/2026</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="p-6 rounded-3xl bg-[#fdfbf7] border border-slate-200 space-y-4 shadow-sm flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center gap-1 text-amber-400">
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            </div>
-            <p class="text-xs text-slate-600 italic leading-relaxed">
-              "Ban đầu rất sợ khoản thanh toán Alipay và tiếng Trung, nhưng cô Hạnh hướng dẫn cài đặt từ A đến Z trước ngày bay, sang đó quẹt mã mượt như ở Hà Nội. Giá tour Thượng Hải - Hàng Châu 9.990K quá hời cho một chuyến bay thẳng."
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-3 border-t border-slate-200/60">
-            <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-xs">
-              TH
-            </div>
-            <div>
-              <div class="text-xs font-bold text-slate-900">Anh Tuấn Hưng</div>
-              <div class="text-[10px] text-slate-400">Đoàn Thượng Hải Ô Trấn 6N5Đ</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="p-6 rounded-3xl bg-[#fdfbf7] border border-slate-200 space-y-4 shadow-sm flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center gap-1 text-amber-400">
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            </div>
-            <p class="text-xs text-slate-600 italic leading-relaxed">
-              "Cuối tuần đổi gió đi Nam Ninh Chi Dạ và Thái Bình Cổ Trấn chỉ hơn 3 triệu mà đẹp ngoài sức tưởng tượng. Phố cổ lên đèn rực rỡ, ăn vặt ngập tràn. Cảm ơn Hạnh vivu tư vấn rất chu đáo và nhiệt tình!"
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-3 border-t border-slate-200/60">
-            <div class="w-9 h-9 rounded-full bg-jade-500/20 text-jade-700 font-bold flex items-center justify-center text-xs">
-              HN
-            </div>
-            <div>
-              <div class="text-xs font-bold text-slate-900">Bạn Hoài Nam</div>
-              <div class="text-[10px] text-slate-400">Đoàn Nam Ninh 3N2Đ</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
   <!-- ================= BOOKING & LEAD GENERATION FORM ================= -->
   <section id="bookingSection" class="py-16 bg-oriental-gradient text-white relative overflow-hidden">
     <div class="max-w-4xl mx-auto px-4 relative z-10">
@@ -1070,9 +1042,11 @@
       
       <!-- Col 1 -->
       <div class="space-y-3">
-        <div class="text-white font-black text-lg flex items-center gap-2">
-          <div class="w-7 h-7 rounded-full bg-oriental-700 text-amber-300 flex items-center justify-center text-sm font-bold">H</div>
-          <span>Hạnh vivu</span>
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full overflow-hidden border border-amber-400">
+            <img src="images/hanh-vivu-avatar.jpg" alt="Hạnh vivu" class="w-full h-full object-cover">
+          </div>
+          <span class="text-white font-black text-lg">Hạnh vivu</span>
         </div>
         <p class="text-slate-400 text-xs leading-relaxed">
           Đơn vị chuyên sâu tour du lịch Trung Quốc chất lượng cao, tuyến No-Shop chuẩn chỉ, đưa bạn khám phá trọn vẹn cảnh sắc và văn hóa Trung Hoa.
@@ -1104,7 +1078,7 @@
         <h4 class="text-white font-bold text-sm">Cam Kết Dịch Vụ</h4>
         <ul class="space-y-1">
           <li>✓ 100% Khách sạn đúng chuẩn cam kết</li>
-          <li>✓ Không phát sinh chi phí ẩn ngoài tour</li>
+          <li>✓ Tuyệt đối không ép mua sắm ở điểm shop</li>
           <li>✓ Tỷ lệ đậu visa đạt 99.8%</li>
           <li>✓ Hỗ trợ xử lý phát sinh 24/7</li>
         </ul>
@@ -1154,7 +1128,6 @@
   <div id="itineraryModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/75 backdrop-blur-sm p-4">
     <div class="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 shadow-2xl relative border border-slate-100">
       
-      <!-- Close Button -->
       <button type="button" class="close-modal-btn absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
         <i data-lucide="x" class="w-4 h-4"></i>
       </button>
