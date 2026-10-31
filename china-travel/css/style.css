@@ -1,126 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
 
 :root {
-  --primary-red: #b91c1c;
-  --dark-red: #7f1d1d;
-  --gold-accent: #f59e0b;
-  --gold-dark: #b45309;
-  --jade-green: #0d9488;
-  --silk-bg: #fdfbf7;
+  --primary-pink: #f43f5e;
+  --hot-pink: #fb7185;
+  --soft-pink: #fff1f5;
+  --blush-pink: #ffe4ed;
+  --bold-black: #09090b;
+  --card-dark: #18181b;
+  --slate-text: #27272a;
 }
 
 body {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  background-color: var(--silk-bg);
-  color: #1e293b;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #fafafa;
+  color: #18181b;
 }
 
-/* Glass Header */
+/* Glass Navigation */
 .glass-nav {
-  background: rgba(253, 251, 247, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-/* Oriental Gradient Backgrounds */
-.bg-oriental-gradient {
-  background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 50%, #450a0a 100%);
+/* Pink Glow & Accents */
+.pink-glow {
+  box-shadow: 0 10px 30px -5px rgba(244, 63, 94, 0.3);
 }
 
-.bg-oriental-subtle {
-  background: linear-gradient(180deg, #fef2f2 0%, #fffbeb 50%, #fdfbf7 100%);
+.pink-glow-lg {
+  box-shadow: 0 20px 45px -10px rgba(244, 63, 94, 0.35);
 }
 
-.bg-gold-gradient {
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+.black-glow {
+  box-shadow: 0 20px 40px -10px rgba(9, 9, 11, 0.25);
 }
 
-.text-gold-gradient {
-  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Red Lantern Glow */
-.lantern-glow {
-  box-shadow: 0 0 25px rgba(220, 38, 38, 0.25);
-}
-
-.gold-glow {
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.35);
-}
-
-/* Pulse animation for CTA */
-@keyframes pulse-gold {
+/* Pulse Animation for Pink CTA */
+@keyframes pulse-pink {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.6);
+    box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.55);
   }
   50% {
-    box-shadow: 0 0 0 12px rgba(245, 158, 11, 0);
+    box-shadow: 0 0 0 14px rgba(244, 63, 94, 0);
   }
 }
 
-.pulse-cta {
-  animation: pulse-gold 2.2s infinite;
+.pulse-pink-btn {
+  animation: pulse-pink 2.2s infinite;
 }
 
-/* Card hover smooth transitions */
-.tour-card {
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+/* Chill & Fresh Tour Card */
+.tour-card-chill {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #fecdd3;
+  background: #ffffff;
 }
 
-.tour-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 30px -10px rgba(185, 28, 28, 0.12), 0 10px 15px -5px rgba(0, 0, 0, 0.04);
+.tour-card-chill:hover {
+  transform: translateY(-8px);
+  border-color: #f43f5e;
+  box-shadow: 0 22px 35px -10px rgba(244, 63, 94, 0.16), 0 8px 12px -5px rgba(0, 0, 0, 0.04);
 }
 
-.tour-card img {
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+.tour-card-chill img {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.tour-card:hover img {
-  transform: scale(1.06);
+.tour-card-chill:hover img {
+  transform: scale(1.05);
 }
 
-/* Tab filter button transitions */
+/* Tab filter button styling */
+.tab-btn {
+  transition: all 0.25s ease;
+}
+
 .tab-btn.active {
-  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
-  color: #ffffff;
-  border-color: #b91c1c;
-  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.25);
+  background-color: #09090b !important;
+  color: #ffffff !important;
+  border-color: #09090b !important;
+  box-shadow: 0 6px 16px rgba(9, 9, 11, 0.2);
 }
 
-/* Custom Scrollbar */
+/* Polaroid Photo Card */
+.polaroid-card {
+  transition: all 0.35s ease;
+  background: #ffffff;
+  padding: 10px 10px 18px 10px;
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.08);
+}
+
+.polaroid-card:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 0 20px 35px -8px rgba(244, 63, 94, 0.2);
+}
+
+/* Badges */
+.badge-pink {
+  background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+  color: #ffffff;
+}
+
+.badge-black {
+  background: #09090b;
+  color: #ffffff;
+}
+
+.badge-chill {
+  background: #fff1f5;
+  color: #e11d48;
+  border: 1px solid #fecdd3;
+}
+
+/* Smooth Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #fff1f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+  background: #fda4af;
+  border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-/* Badge styles */
-.badge-noshop {
-  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
-  color: #ffffff;
-}
-
-.badge-hot {
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-  color: #ffffff;
-}
-
-.badge-luxury {
-  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
-  color: #ffffff;
+  background: #f43f5e;
 }
