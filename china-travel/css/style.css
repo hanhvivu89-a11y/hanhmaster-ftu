@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap');
+
+:root {
+  --primary-red: #b91c1c;
+  --dark-red: #7f1d1d;
+  --gold-accent: #f59e0b;
+  --gold-dark: #b45309;
+  --jade-green: #0d9488;
+  --silk-bg: #fdfbf7;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: var(--silk-bg);
+  color: #1e293b;
+}
+
+/* Glass Header */
+.glass-nav {
+  background: rgba(253, 251, 247, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Oriental Gradient Backgrounds */
+.bg-oriental-gradient {
+  background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 50%, #450a0a 100%);
+}
+
+.bg-oriental-subtle {
+  background: linear-gradient(180deg, #fef2f2 0%, #fffbeb 50%, #fdfbf7 100%);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Red Lantern Glow */
+.lantern-glow {
+  box-shadow: 0 0 25px rgba(220, 38, 38, 0.25);
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.35);
+}
+
+/* Pulse animation for CTA */
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(245, 158, 11, 0);
+  }
+}
+
+.pulse-cta {
+  animation: pulse-gold 2.2s infinite;
+}
+
+/* Card hover smooth transitions */
+.tour-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tour-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(185, 28, 28, 0.12), 0 10px 15px -5px rgba(0, 0, 0, 0.04);
+}
+
+.tour-card img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tour-card:hover img {
+  transform: scale(1.06);
+}
+
+/* Tab filter button transitions */
+.tab-btn.active {
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  color: #ffffff;
+  border-color: #b91c1c;
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Badge styles */
+.badge-noshop {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  color: #ffffff;
+}
+
+.badge-hot {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #ffffff;
+}
+
+.badge-luxury {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  color: #ffffff;
+}
